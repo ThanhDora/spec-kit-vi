@@ -43,23 +43,23 @@ Spec Kit kết hợp các quy trình dùng được ngay với những cơ chế
 
 | Khả năng | Cơ chế của Spec Kit |
 | --- | --- |
-| Kết nối hoặc chuyển đổi giữa các agent lập trình | [Integration](https://github.github.io/spec-kit/integrations/index.html) |
-| Thêm một lệnh, một cổng kiểm soát chất lượng hoặc cả một quy trình | [Extension](https://github.github.io/spec-kit/reference/extensions.html) |
-| Kết nối quy trình với công cụ hoặc dịch vụ bên ngoài | [Extension](https://github.github.io/spec-kit/reference/extensions.html) |
-| Phản hồi các sự kiện trong vòng đời của agent lập trình | [Sự kiện runtime của extension](https://github.github.io/spec-kit/reference/extensions.html#extension-runtime-events) |
-| Chạy lệnh của extension trước hoặc sau các lệnh Spec Kit | [Extension hook](https://github.github.io/spec-kit/reference/extensions.html#project-extension-and-hook-configuration) |
-| Điều chỉnh template, lệnh, thuật ngữ hoặc phương pháp | [Preset](https://github.github.io/spec-kit/reference/presets.html) |
-| Áp dụng tiêu chuẩn của tổ chức hoặc quy định pháp lý | [Preset](https://github.github.io/spec-kit/reference/presets.html) |
+| Kết nối hoặc chuyển đổi giữa các agent lập trình | [Integration](./docs/vi/integrations/index.md) |
+| Thêm một lệnh, một cổng kiểm soát chất lượng hoặc cả một quy trình | [Extension](./docs/vi/reference/extensions.md) |
+| Kết nối quy trình với công cụ hoặc dịch vụ bên ngoài | [Extension](./docs/vi/reference/extensions.md) |
+| Phản hồi các sự kiện trong vòng đời của agent lập trình | [Sự kiện runtime của extension](./docs/vi/reference/extensions.md#extension-runtime-events) |
+| Chạy lệnh của extension trước hoặc sau các lệnh Spec Kit | [Extension hook](./docs/vi/reference/extensions.md#project-extension-and-hook-configuration) |
+| Điều chỉnh template, lệnh, thuật ngữ hoặc phương pháp | [Preset](./docs/vi/reference/presets.md) |
+| Áp dụng tiêu chuẩn của tổ chức hoặc quy định pháp lý | [Preset](./docs/vi/reference/presets.md) |
 | Ghi đè một template cho riêng một dự án | [Ghi đè cục bộ trong dự án](./docs/vi/guides/customization.md#project-local-overrides-and-resolution) |
-| Tự động hóa prompt, lệnh, cổng kiểm soát và tác vụ shell | [Workflow](https://github.github.io/spec-kit/reference/workflows.html) |
-| Sửa một workflow đã cài mà không cần fork | [Workflow overlay](https://github.github.io/spec-kit/reference/workflows.html#workflow-overlays) |
-| Thêm hành vi thực thi tái sử dụng được vào workflow | [Workflow step](https://github.github.io/spec-kit/reference/workflows.html#custom-step-packages) |
-| Cài một bộ thiết lập chọn lọc cho một vai trò hoặc một nhóm | [Bundle](https://github.github.io/spec-kit/reference/bundles.html) |
-| Khám phá các thành phần do cộng đồng đóng góp | [Catalog](https://github.github.io/spec-kit/reference/catalogs.html) |
-| Tự host một catalog riêng gồm các thành phần đã được duyệt | [Catalog](https://github.github.io/spec-kit/reference/catalogs.html) |
-| Truy cập catalog riêng và tải thành phần | [Xác thực](https://github.github.io/spec-kit/reference/authentication.html) |
+| Tự động hóa prompt, lệnh, cổng kiểm soát và tác vụ shell | [Workflow](./docs/vi/reference/workflows.md) |
+| Sửa một workflow đã cài mà không cần fork | [Workflow overlay](./docs/vi/reference/workflows.md#workflow-overlays) |
+| Thêm hành vi thực thi tái sử dụng được vào workflow | [Workflow step](./docs/vi/reference/workflows.md#custom-step-packages) |
+| Cài một bộ thiết lập chọn lọc cho một vai trò hoặc một nhóm | [Bundle](./docs/vi/reference/bundles.md) |
+| Khám phá các thành phần do cộng đồng đóng góp | [Catalog](./docs/vi/reference/catalogs.md) |
+| Tự host một catalog riêng gồm các thành phần đã được duyệt | [Catalog](./docs/vi/reference/catalogs.md) |
+| Truy cập catalog riêng và tải thành phần | [Xác thực](./docs/vi/reference/authentication.md) |
 | Làm việc offline hoặc sau tường lửa | [Nguồn cục bộ và catalog tự host](./docs/vi/install/air-gapped.md) |
-| Xem lớp nào đang cung cấp một lệnh, template hoặc script | [Kiểm kê artifact](https://github.github.io/spec-kit/reference/artifacts.html) |
+| Xem lớp nào đang cung cấp một lệnh, template hoặc script | [Kiểm kê artifact](./docs/vi/reference/artifacts.md) |
 
 Tìm trong các catalog đang bật bằng những lệnh như `specify extension search`, `specify preset search`, `specify workflow search` và `specify bundle search`. Spec Kit có sẵn các catalog cộng đồng, và tổ chức có thể thêm nguồn chọn lọc của riêng mình. Việc có mặt trong catalog không có nghĩa là thành phần đó đã được kiểm định hay bảo chứng, vì vậy hãy xem mã nguồn của thành phần cộng đồng trước khi cài hoặc chạy.
 
@@ -87,7 +87,7 @@ Với các cách thiết lập khác:
 
 - [Cài đặt](./docs/vi/installation.md): ghim phiên bản cụ thể, các trình cài đặt khác, CI và xử lý sự cố.
 - [Dự án có sẵn](./docs/vi/guides/existing-projects.md): bắt đầu với mã nguồn bạn đang có.
-- [Các agent khác](https://github.github.io/spec-kit/integrations/index.html): khóa integration và [cú pháp gọi lệnh](https://github.github.io/spec-kit/integrations/cli.html#command-invocation).
+- [Các agent khác](./docs/vi/integrations/index.md): khóa integration và [cú pháp gọi lệnh](./docs/vi/integrations/cli.md#command-invocation).
 - [Nâng cấp](./docs/vi/upgrade.md): cập nhật bản cài đặt hiện có.
 
 <a id="-what-is-spec-driven-development"></a>
@@ -100,7 +100,7 @@ Xác định cần xây dựng cái gì và vì sao, rồi biến bản đặc t
 
 Dưới đây là luồng tối thiểu. Tạo hiến chương (constitution) một lần cho mỗi dự án, rồi lặp lại các bước còn lại cho từng tính năng. Chạy lần lượt từng skill trong khung chat của agent, không phải trong terminal, và xem lại kết quả của mỗi bước trước khi đi tiếp.
 
-Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với agent khác, hãy dùng [cú pháp gọi lệnh tương ứng](https://github.github.io/spec-kit/integrations/cli.html#command-invocation).
+Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với agent khác, hãy dùng [cú pháp gọi lệnh tương ứng](./docs/vi/integrations/cli.md#command-invocation).
 
 ```text
 /speckit-constitution Tạo các nguyên tắc tập trung vào chất lượng mã, kiểm thử và khả năng bảo trì.
@@ -114,7 +114,7 @@ Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với ag
 Lặp lại implement và converge cho đến khi bước hội tụ báo `Converged`. Về làm rõ yêu cầu, checklist và phân tích tính nhất quán, xem hướng dẫn từng bước của SDD.
 
 [Hướng dẫn SDD từng bước](./docs/vi/quickstart.md) ·
-[Tham chiếu lệnh](https://github.github.io/spec-kit/reference/agentic-sdd.html)
+[Tham chiếu lệnh](./docs/vi/reference/agentic-sdd.md)
 
 <a id="-bug-fixing-with-spec-kit"></a>
 <a id="bug-fix-quickstart"></a>
@@ -132,7 +132,7 @@ specify extension add bug
 
 Chạy lần lượt từng skill trong khung chat của agent, không phải trong terminal, và xem lại kết quả của mỗi bước trước khi đi tiếp.
 
-Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với agent khác, hãy dùng [cú pháp gọi lệnh tương ứng](https://github.github.io/spec-kit/integrations/cli.html#command-invocation).
+Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với agent khác, hãy dùng [cú pháp gọi lệnh tương ứng](./docs/vi/integrations/cli.md#command-invocation).
 
 ```text
 /speckit-bug-assess "Gửi mật khẩu trống làm form đăng nhập bị crash." slug=login-crash
@@ -143,7 +143,7 @@ Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với ag
 Xem các báo cáo trong `.specify/bugs/login-crash/`. Kết luận cuối cùng là `verified`, `partial` hoặc `failed`; chỉ `verified` mới xác nhận lỗi đã được sửa thành công.
 
 [Hướng dẫn sửa lỗi từng bước](./docs/vi/guides/bugfix.md) ·
-[Tham chiếu lệnh](https://github.github.io/spec-kit/reference/agentic-bugfix.html)
+[Tham chiếu lệnh](./docs/vi/reference/agentic-bugfix.md)
 
 <a id="-assessing-ideas-with-spec-kit"></a>
 <a id="idea-assessment-quickstart"></a>
@@ -161,7 +161,7 @@ specify extension add assess
 
 Chạy lần lượt từng skill trong khung chat của agent, không phải trong terminal, và xem lại kết quả của mỗi bước trước khi đi tiếp.
 
-Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với agent khác, hãy dùng [cú pháp gọi lệnh tương ứng](https://github.github.io/spec-kit/integrations/cli.html#command-invocation).
+Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với agent khác, hãy dùng [cú pháp gọi lệnh tương ứng](./docs/vi/integrations/cli.md#command-invocation).
 
 ```text
 /speckit-assess-intake "Cho phép người dùng làm việc offline và đồng bộ khi có mạng trở lại." slug=offline-mode
@@ -174,7 +174,7 @@ Ví dụ này dùng cú pháp skill mặc định của GitHub Copilot. Với ag
 Xem các artifact trong `.specify/assessments/offline-mode/` và quyết định cuối cùng: `go`, `needs-clarification` hoặc `kill`. Hãy giải quyết các điểm chưa rõ bằng cách sửa trực tiếp các artifact Markdown hiện có, tự tay hoặc nhờ agent, thay vì chạy lại cả một giai đoạn. Nếu bạn quyết định xây dựng một ý tưởng phần mềm đã nhận kết luận `go`, hãy lập hiến chương dự án nếu chưa có, rồi chuyển phần tóm tắt bàn giao trong `decision.md` cho `/speckit-specify`. Dừng lại với lý do được ghi chép rõ ràng cũng là một kết quả có ích.
 
 [Hướng dẫn thẩm định từng bước](./docs/vi/guides/assessment.md) ·
-[Tham chiếu lệnh](https://github.github.io/spec-kit/reference/agentic-assessment.html)
+[Tham chiếu lệnh](./docs/vi/reference/agentic-assessment.md)
 
 <a id="-making-spec-kit-your-own-extensions--presets"></a>
 <a id="-bundles-role-based-setups"></a>
@@ -192,7 +192,7 @@ Tùy biến quy trình Phát triển hướng đặc tả, sửa lỗi hay thẩ
 Hãy bắt đầu từ thay đổi nhỏ nhất đáp ứng được nhu cầu; bạn không cần thay cả quy trình.
 
 [Hướng dẫn tùy biến](./docs/vi/guides/customization.md) ·
-[Thành phần và hướng dẫn từ cộng đồng](https://github.github.io/spec-kit/community/overview.html)
+[Thành phần và hướng dẫn từ cộng đồng](./docs/vi/community/overview.md)
 
 <a id="-specify-cli-reference"></a>
 <a id="available-slash-commands"></a>
@@ -204,7 +204,7 @@ Hãy bắt đầu từ thay đổi nhỏ nhất đáp ứng được nhu cầu; 
 
 ## Tài liệu
 
-- [Tham chiếu CLI](https://github.github.io/spec-kit/reference/overview.html) và [các lệnh của quy trình](https://github.github.io/spec-kit/reference/agentic-sdd.html#command-overview)
+- [Tham chiếu CLI](./docs/vi/reference/overview.md) và [các lệnh của quy trình](./docs/vi/reference/agentic-sdd.md#command-overview)
 - [Triết lý SDD](./docs/vi/concepts/sdd.md), [phương pháp đầy đủ](./spec-driven.vi.md) ([bản tiếng Anh](./spec-driven.md)) và [phát triển tiếp các đặc tả đã có](./docs/vi/guides/evolving-specs.md)
 - [Lịch sử dự án](./docs/vi/history.md)
 - [Spec Kit dùng chính Spec Kit như thế nào](./CONTRIBUTING.md#does-spec-kit-use-spec-kit)

@@ -56,3 +56,4 @@ Khi upstream cập nhật `templates/` hoặc `templates/commands/`, chạy lạ
 ## Hạn chế đã biết
 
 - Ở bản Spec Kit hiện tại, template do preset cung cấp được dùng nguyên văn, không được thay placeholder `__SPECKIT_COMMAND_*__` như template lõi lúc `specify init`. Vì vậy `plan-template.md`, `tasks-template.md` và `checklist-template.md` của preset này có thể để lại nguyên chuỗi như `__SPECKIT_COMMAND_PLAN__` trong các ghi chú của artifact sinh ra. Các file lệnh (`/speckit.*`) không bị ảnh hưởng vì placeholder trong lệnh vẫn được thay khi cài preset. Preset giữ nguyên placeholder để đúng với bản gốc và sẽ tự hiển thị đúng khi Spec Kit hỗ trợ thay placeholder trong template của preset.
+- Tài liệu trong `docs/vi/` đã dịch đủ mọi trang có trong `docs/toc.yml`. Các lỗi định dạng của bản tiếng Anh được giữ nguyên để khớp với bản gốc, ví dụ inline code thiếu dấu backtick đóng trong mục xử lý sự cố của `docs/extensions/overview.md` (“Extension 'jira' not found in catalog”).

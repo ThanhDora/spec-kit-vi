@@ -403,4 +403,4 @@ Cập nhật Spec Kit lên phiên bản mà extension yêu cầu.
 
 ### Ai duy trì các extension?
 
-Hầu hết extension được tạo và duy trì độc lập bởi tác giả của chúng. Người duy trì Spec Kit không review, kiểm định, bảo chứng hay hỗ trợ code của extension. Hãy review mã nguồn của extension trước khi cài và tự cân nhắc khi sử dụng. Với vấn đề của một extension cụ thể, hãy liên hệ tác giả hoặc tạo issue trên repository của extension đó.
+Hầu hết extension được tạo và duy trì độc lập bởi tác giả của chúng. Các maintainer của Spec Kit không review, kiểm định, bảo chứng hay hỗ trợ code của extension. Hãy review mã nguồn của extension trước khi cài và tự cân nhắc khi sử dụng. Với vấn đề của một extension cụ thể, hãy liên hệ tác giả hoặc tạo issue trên repository của extension đó.

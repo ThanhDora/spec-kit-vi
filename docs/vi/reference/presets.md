@@ -367,4 +367,4 @@ Chạy `specify preset resolve <name>` để lần theo chồng phân giải và
 
 ### Ai duy trì các preset?
 
-Hầu hết preset được tạo và duy trì độc lập bởi tác giả của chúng. Người duy trì Spec Kit không review, kiểm định, bảo chứng hay hỗ trợ code của preset. Hãy review mã nguồn của preset trước khi cài và tự cân nhắc khi sử dụng. Với vấn đề của một preset cụ thể, hãy liên hệ tác giả hoặc tạo issue trên repository của preset đó.
+Hầu hết preset được tạo và duy trì độc lập bởi tác giả của chúng. Các maintainer của Spec Kit không review, kiểm định, bảo chứng hay hỗ trợ code của preset. Hãy review mã nguồn của preset trước khi cài và tự cân nhắc khi sử dụng. Với vấn đề của một preset cụ thể, hãy liên hệ tác giả hoặc tạo issue trên repository của preset đó.

@@ -10,7 +10,7 @@
 <!-- vi-banner:end -->
 
 > [!NOTE]
-> Extension cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Người duy trì chỉ xác minh các mục catalog đầy đủ và đúng định dạng — họ **không review, kiểm định, bảo chứng hay hỗ trợ code của bản thân extension**. Website Community Extensions cũng là tài nguyên của bên thứ ba. Hãy review mã nguồn extension trước khi cài và tự cân nhắc khi sử dụng.
+> Extension cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Maintainer chỉ xác minh các mục catalog đầy đủ và đúng định dạng — họ **không review, kiểm định, bảo chứng hay hỗ trợ code của bản thân extension**. Website Community Extensions cũng là tài nguyên của bên thứ ba. Hãy review mã nguồn extension trước khi cài và tự cân nhắc khi sử dụng.
 
 🔍 **Duyệt và tìm extension cộng đồng trên [website Community Extensions](https://speckit-community.github.io/extensions/).**
 

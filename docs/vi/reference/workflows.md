@@ -520,7 +520,7 @@ Catalog workflow kiểm soát nơi `search` và `add` tìm workflow. Các catalo
 
 Catalog workflow và catalog step lưu cache JSON đã tải và metadata về độ mới trong một giờ, lần lượt tại `.specify/workflows/.cache/` và `.specify/workflows/steps/.cache/`. I/O của cache không đi theo thành phần thư mục hay file cache là symlink. Thao tác ghi thay thế file cache một cách nguyên tử thay vì cắt bớt đích mà chúng trỏ tới, nên một symlink file cache có sẵn có thể bị thay thế mà không làm thay đổi đích của nó. Nếu không thể ghi cache an toàn, một cảnh báo được ghi log và việc tìm kiếm tiếp tục với catalog đã tải.
 
-> **File `.specify/workflow-catalogs.yml` của một dự án có thể trỏ `add` và `search` tới một catalog bạn không chọn.** Trước khi chạy workflow từ một dự án lạ, hãy chạy `specify workflow catalog list` (và `specify workflow step catalog list` cho các catalog step mà step của nó có thể kéo về) — việc một dự án cung cấp cấu hình đó không phải bằng chứng các workflow hay step của nó đã được kiểm định. Người duy trì không kiểm định code workflow; hãy tự review cả `run` và `env` trong các shell step của nó, kể cả step strict (xem [Review việc thực thi shell](#reviewing-shell-execution) và [Ai duy trì các workflow?](#who-maintains-workflows)).
+> **File `.specify/workflow-catalogs.yml` của một dự án có thể trỏ `add` và `search` tới một catalog bạn không chọn.** Trước khi chạy workflow từ một dự án lạ, hãy chạy `specify workflow catalog list` (và `specify workflow step catalog list` cho các catalog step mà step của nó có thể kéo về) — việc một dự án cung cấp cấu hình đó không phải bằng chứng các workflow hay step của nó đã được kiểm định. Maintainer không kiểm định code workflow; hãy tự review cả `run` và `env` trong các shell step của nó, kể cả step strict (xem [Review việc thực thi shell](#reviewing-shell-execution) và [Ai duy trì các workflow?](#who-maintains-workflows)).
 
 <a id="list-catalogs"></a>
 
@@ -812,7 +812,7 @@ Với script đa nền tảng, hãy đọc biến môi trường ngay trong chư
 
 ### GitHub step
 
-`type: github` dùng CLI `gh` đã cài và phiên xác thực đang hoạt động của nó. Chỉ định repository GitHub dạng `owner/repo`; không cần Git remote hay bản checkout mã nguồn. Request được gửi tới endpoint REST `api.github.com` của GitHub cho repository đó. Token đang hoạt động cần quyền đọc issue hoặc pull request và ghi nhãn của nó (ví dụ `issues: write` cho issue hoặc `pull-requests: write` cho PR khi dùng `GITHUB_TOKEN` trong Actions). Step chỉ dùng token hiện có: nó không yêu cầu hay nâng quyền. Nó không xem nội dung issue để tìm chỉ dẫn hay đưa ra quyết định thay người duy trì.
+`type: github` dùng CLI `gh` đã cài và phiên xác thực đang hoạt động của nó. Chỉ định repository GitHub dạng `owner/repo`; không cần Git remote hay bản checkout mã nguồn. Request được gửi tới endpoint REST `api.github.com` của GitHub cho repository đó. Token đang hoạt động cần quyền đọc issue hoặc pull request và ghi nhãn của nó (ví dụ `issues: write` cho issue hoặc `pull-requests: write` cho PR khi dùng `GITHUB_TOKEN` trong Actions). Step chỉ dùng token hiện có: nó không yêu cầu hay nâng quyền. Nó không xem nội dung issue để tìm chỉ dẫn hay đưa ra quyết định thay maintainer.
 
 ```yaml
 - id: mark-ready
@@ -824,7 +824,7 @@ Với script đa nền tảng, hãy đọc biến môi trường ngay trong chư
   label: ready-for-review
 ```
 
-`target` là `issue` hoặc `pull_request`; `number` phải phân giải thành số nguyên dương. `label` là một tên nhãn tường minh (tối đa 50 ký tự) và phải đã tồn tại trong repository. `repository`, `number` và `label` có thể dùng biểu thức workflow. Repository phải phân giải thành một tên `owner/repo` duy nhất, không phải URL hay Git remote. Step kiểm tra loại đích và các nhãn hiện có, bỏ qua thao tác ghi khi nhãn đã có, và xác minh phản hồi của GitHub sau khi thêm. Đầu ra gồm `repository`, `target`, `number`, `label` và `added` (chỉ `true` khi một nhãn được thêm). Thực thi lặp lại và các item fan-out đều an toàn khi thử lại: nhãn đã có được giữ nguyên. Phiên bản đầu tiên này không đăng bình luận, khôi phục artifact, checkout PR hay suy đoán nhãn mà người duy trì sẽ chọn.
+`target` là `issue` hoặc `pull_request`; `number` phải phân giải thành số nguyên dương. `label` là một tên nhãn tường minh (tối đa 50 ký tự) và phải đã tồn tại trong repository. `repository`, `number` và `label` có thể dùng biểu thức workflow. Repository phải phân giải thành một tên `owner/repo` duy nhất, không phải URL hay Git remote. Step kiểm tra loại đích và các nhãn hiện có, bỏ qua thao tác ghi khi nhãn đã có, và xác minh phản hồi của GitHub sau khi thêm. Đầu ra gồm `repository`, `target`, `number`, `label` và `added` (chỉ `true` khi một nhãn được thêm). Thực thi lặp lại và các item fan-out đều an toàn khi thử lại: nhãn đã có được giữ nguyên. Phiên bản đầu tiên này không đăng bình luận, khôi phục artifact, checkout PR hay suy đoán nhãn mà maintainer sẽ chọn.
 
 <a id="custom-step-packages"></a>
 
@@ -904,7 +904,7 @@ specify workflow step add my-step
 
 Cài từ catalog phân giải URL từng file từ các catalog step đang hoạt động, rồi đi qua cùng đường kiểm tra và ghi nhận như `--dev` và `--from`. Không thể cài từ catalog chỉ tìm kiếm.
 
-Để gửi một loại step tùy chỉnh vào catalog cộng đồng chỉ tìm kiếm, hãy làm theo [Các workflow step cộng đồng](../community/workflow-steps.md). Bài gửi dùng URL từng file ghim theo tag và digest cho từng file; người duy trì kiểm tra metadata và bằng chứng phân phối, không kiểm tra code được gửi.
+Để gửi một loại step tùy chỉnh vào catalog cộng đồng chỉ tìm kiếm, hãy làm theo [Các workflow step cộng đồng](../community/workflow-steps.md). Bài gửi dùng URL từng file ghim theo tag và digest cho từng file; maintainer kiểm tra metadata và bằng chứng phân phối, không kiểm tra code được gửi.
 
 <a id="catalog-release-history"></a>
 
@@ -1311,4 +1311,4 @@ Có. Mỗi lần chạy có ID duy nhất và thư mục trạng thái riêng. D
 
 ### Ai duy trì các workflow?
 
-Hầu hết workflow được tạo và duy trì độc lập bởi tác giả của chúng. Người duy trì Spec Kit không review, kiểm định, bảo chứng hay hỗ trợ code của workflow. Hãy review mã nguồn của workflow trước khi cài và tự cân nhắc khi sử dụng.
+Hầu hết workflow được tạo và duy trì độc lập bởi tác giả của chúng. Các maintainer của Spec Kit không review, kiểm định, bảo chứng hay hỗ trợ code của workflow. Hãy review mã nguồn của workflow trước khi cài và tự cân nhắc khi sử dụng.

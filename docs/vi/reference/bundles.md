@@ -23,8 +23,8 @@ Spec Kit đi kèm một catalog bundle chính chủ trong `bundles/catalog.json`
 
 | Bundle | Vai trò | Thành phần | Trường hợp sử dụng |
 | --------- | ----------- | ----------------------------------------------------- | --------------------------------------- |
-| `bugfix` | `developer` | Extension `bug` + workflow `bugfix` | Quy trình có hướng dẫn assess → gate → fix → test |
-| `assess` | `developer` | Extension `assess` + workflow `assess` | Sàng lọc ý tưởng trước khi Phát triển hướng đặc tả |
+| `bugfix`  | `developer` | Extension `bug` + workflow `bugfix` | Quy trình có hướng dẫn assess → gate → fix → test |
+| `assess`  | `developer` | Extension `assess` + workflow `assess` | Sàng lọc ý tưởng trước khi Phát triển hướng đặc tả |
 
 Cài một bundle chính chủ giống như cài bất kỳ bundle nào (`add` là bí danh của `install`):
 
@@ -289,9 +289,9 @@ Nếu bundle của bạn tham chiếu thành phần từ catalog không mặc đ
 ### Điều gì xảy ra sau khi bạn gửi
 
 1. GitHub gắn kết luận `triage-must-have` khi issue được mở qua form Bundle Submission. Bài gửi bundle cùng với bài gửi extension và preset dùng tự động hóa tiếp nhận này; tiêu chí triage thủ công cho các issue khác giữ nguyên.
-2. Người duy trì review issue trong quá trình triage và gắn nhãn riêng `bundle-submission`, nhãn này khởi động việc kiểm tra catalog tự động. Trên repository công khai này, người đóng góp không thể tự gắn nhãn đó, nên không cần gắn nhãn hay yêu cầu lại — issue chỉ đơn giản chờ trong hàng triage.
+2. Maintainer review issue trong quá trình triage và gắn nhãn riêng `bundle-submission`, nhãn này khởi động việc kiểm tra catalog tự động. Trên repository công khai này, người đóng góp không thể tự gắn nhãn đó, nên không cần gắn nhãn hay yêu cầu lại — issue chỉ đơn giản chờ trong hàng triage.
 3. Workflow tự động kiểm tra bài gửi và, khi kiểm tra đạt, cập nhật `bundles/catalog.community.json` và `docs/community/bundles.md` trong một draft pull request
-4. Người duy trì review pull request được sinh ra và merge khi chấp thuận
+4. Maintainer review pull request được sinh ra và merge khi chấp thuận
 5. Bundle của bạn có thể được tìm thấy qua `specify bundle search`
 
 <a id="manage-catalog-sources"></a>

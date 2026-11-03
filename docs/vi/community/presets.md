@@ -10,7 +10,7 @@
 <!-- vi-banner:end -->
 
 > [!NOTE]
-> Preset cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Người duy trì chỉ xác minh các mục catalog đầy đủ và đúng định dạng — họ **không review, kiểm định, bảo chứng hay hỗ trợ code của bản thân preset**. Hãy review mã nguồn preset trước khi cài và tự cân nhắc khi sử dụng.
+> Preset cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Maintainer chỉ xác minh các mục catalog đầy đủ và đúng định dạng — họ **không review, kiểm định, bảo chứng hay hỗ trợ code của bản thân preset**. Hãy review mã nguồn preset trước khi cài và tự cân nhắc khi sử dụng.
 
 Các preset do cộng đồng đóng góp sau đây tùy biến cách Spec Kit hoạt động — ghi đè template, lệnh và thuật ngữ mà không thay đổi công cụ nào. Các preset có trong [`catalog.community.json`](https://github.com/github/spec-kit/blob/main/presets/catalog.community.json):
 

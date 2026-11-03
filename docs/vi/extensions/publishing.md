@@ -183,21 +183,21 @@ Spec Kit dùng hệ thống hai catalog. Để biết chi tiết cách catalog h
 ### Điều gì xảy ra sau khi bạn gửi
 
 1. GitHub gắn kết luận `triage-must-have` khi issue được mở qua form Extension Submission. Tự động hóa tiếp nhận này chỉ dành cho bài gửi extension và không thay đổi tiêu chí triage thủ công đối với các issue khác.
-2. Người duy trì review issue trong quá trình triage và gắn nhãn riêng `extension-submission`, nhãn này khởi động việc kiểm tra catalog tự động. Trên repository công khai này, người đóng góp không thể tự gắn nhãn đó, nên không cần gắn nhãn hay yêu cầu lại — issue chỉ đơn giản chờ trong hàng triage.
+2. Maintainer review issue trong quá trình triage và gắn nhãn riêng `extension-submission`, nhãn này khởi động việc kiểm tra catalog tự động. Trên repository công khai này, người đóng góp không thể tự gắn nhãn đó, nên không cần gắn nhãn hay yêu cầu lại — issue chỉ đơn giản chờ trong hàng triage.
 3. Workflow tự động kiểm tra bài gửi và, khi kiểm tra đạt, cập nhật `extensions/catalog.community.json` và `docs/community/extensions.md` trong một draft pull request
-4. Người duy trì review pull request được sinh ra và merge khi chấp thuận
+4. Maintainer review pull request được sinh ra và merge khi chấp thuận
 5. Extension của bạn có thể được tìm thấy qua `specify extension search`
 
 <a id="what-maintainers-check"></a>
 
-### Người duy trì kiểm tra những gì
+### Maintainer kiểm tra những gì
 
 - Các trường của mục catalog đầy đủ và đúng định dạng
 - URL tải về truy cập được
 - Repository tồn tại và có manifest `extension.yml`
 
 > [!NOTE]
-> Người duy trì **không** review, kiểm định hay kiểm thử bản thân code của extension.
+> Maintainer **không** review, kiểm định hay kiểm thử bản thân code của extension.
 
 <a id="typical-review-timeline"></a>
 

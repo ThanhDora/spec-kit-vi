@@ -61,7 +61,7 @@ Bao quát [hợp đồng vòng đời](https://github.com/github/spec-kit/blob/m
 
 ## Gửi vào catalog cộng đồng
 
-Nhà phát triển bên ngoài có thể liệt kê integration trong `integrations/catalog.community.json` để người khác tìm thấy. Người duy trì catalog review metadata của mục được liệt kê, không review phần triển khai adapter; người dùng phải tự thẩm định code. Việc được liệt kê không đồng nghĩa với quyền cài đặt.
+Nhà phát triển bên ngoài có thể liệt kê integration trong `integrations/catalog.community.json` để người khác tìm thấy. Maintainer catalog review metadata của mục được liệt kê, không review phần triển khai adapter; người dùng phải tự thẩm định code. Việc được liệt kê không đồng nghĩa với quyền cài đặt.
 
 <a id="prerequisites"></a>
 

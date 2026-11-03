@@ -194,10 +194,27 @@ Các lệnh tiếng Việt tham chiếu tới tên mục dưới đây, nên ph�
 | appetite | mức đầu tư sẵn sàng bỏ ra (appetite) | Thuật ngữ của Shape Up |
 | verdict | kết luận | Giá trị `go`, `verified`... giữ nguyên |
 | scaffold / scaffolding | khung / phần khung, dựng khung | |
+| resolve / resolution (stack) | phân giải / chồng phân giải | Dùng cho template, lệnh, catalog, workflow |
+| precedence / priority | độ ưu tiên / priority | `priority` giữ nguyên khi là trường cấu hình |
+| discovery-only / install-allowed | chỉ tìm kiếm / cho phép cài | Chế độ của catalog |
+| overlay / slot / anchor | overlay / slot / anchor | Thuật ngữ workflow, giữ nguyên |
+| step / gate / fan-out / fan-in | step / gate / fan-out / fan-in | Loại workflow step, giữ nguyên |
+| run / resume | lần chạy / resume (tiếp tục) | `run_id`, `specify workflow resume` giữ nguyên |
+| capture (output) | thu (đầu ra) | `capture: true` giữ nguyên |
+| interpolation / expression / filter | nội suy / biểu thức / filter | |
+| strict mode | chế độ strict | `strict: true` giữ nguyên |
+| vet / audit / endorse | kiểm định / kiểm định, kiểm toán / bảo chứng | |
+| manifest / archive / digest | manifest / archive / digest | |
+| bundle | bundle | Tên thành phần, giữ nguyên |
+| submission | bài gửi | Biểu mẫu issue gửi lên catalog cộng đồng |
+| walkthrough | hướng dẫn từng bước | |
+| fail-closed | đóng khi lỗi | |
 
 ### Quy ước riêng cho `docs/vi/`
 
 - Cấu trúc thư mục `docs/vi/` mô phỏng đúng `docs/` và có `toc.yml` riêng; mỗi trang có một khung ghi chú liên kết về bản tiếng Anh.
 - Link tới trang đã dịch trỏ vào `docs/vi/`; link tới trang chưa dịch trỏ về bản tiếng Anh.
+- Trong các bảng catalog cộng đồng (`community/`), cột tên dự án và nhãn `Read-only`/`Read+Write` giữ nguyên; chỉ dịch mô tả.
+- Thông báo lỗi và chuỗi CLI trích nguyên văn (ví dụ `Command exited with code 2`, "not JSON-serializable") giữ nguyên tiếng Anh để người đọc tìm được trong log.
 - Trước mỗi heading đã dịch có thẻ `<a id="...">` mang anchor của heading tiếng Anh, để mọi link có `#anchor` từ bản tiếng Anh vẫn dùng được.
 - Khối code, lệnh, ví dụ prompt trong khối code, tên file và placeholder giữ nguyên tiếng Anh.

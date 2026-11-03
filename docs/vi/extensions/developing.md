@@ -662,7 +662,7 @@ Gửi vào catalog cộng đồng để mọi người tìm thấy:
 
 1. **Tạo GitHub release** cho extension của bạn
 2. **Tạo issue** theo template [Extension Submission](https://github.com/github/spec-kit/issues/new?template=extension_submission.yml)
-3. **Sau khi review**, người duy trì cập nhật catalog và extension của bạn trở nên khả dụng:
+3. **Sau khi review**, maintainer cập nhật catalog và extension của bạn trở nên khả dụng:
    - Người dùng có thể duyệt `catalog.community.json` để tìm extension của bạn
    - Người dùng sao chép mục đó vào `catalog.json` của họ
    - Người dùng cài bằng: `specify extension add my-ext` (từ catalog của họ)

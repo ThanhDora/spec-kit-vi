@@ -10,11 +10,11 @@
 <!-- vi-banner:end -->
 
 > [!NOTE]
-> Các loại workflow step cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Người duy trì xác minh metadata của bài gửi và cấu trúc package; họ **không review, kiểm định, bảo chứng hay hỗ trợ code Python có thể thực thi**. Việc cài đặt kiểm tra và sao chép package mà không import code Python của nó. Các lệnh `specify workflow add`, `run` và `resume` về sau sẽ nạp package step đã cài, thực thi code lúc import với quyền của người dùng. Hãy review mã nguồn trước khi cài và sử dụng.
+> Các loại workflow step cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Maintainer xác minh metadata của bài gửi và cấu trúc package; họ **không review, kiểm định, bảo chứng hay hỗ trợ code Python có thể thực thi**. Việc cài đặt kiểm tra và sao chép package mà không import code Python của nó. Các lệnh `specify workflow add`, `run` và `resume` về sau sẽ nạp package step đã cài, thực thi code lúc import với quyền của người dùng. Hãy review mã nguồn trước khi cài và sử dụng.
 
 Package workflow step tùy chỉnh bổ sung một `type:` mà workflow có thể dùng ngoài các loại step có sẵn. Đường tiếp nhận chuẩn là biểu mẫu issue [Workflow Step Type Submission](https://github.com/github/spec-kit/issues/new?template=workflow_step_submission.yml) cho mục mới, cập nhật phiên bản và sửa metadata.
 
-Mở biểu mẫu chỉ áp dụng nhãn verdict `triage-must-have`. Người duy trì áp dụng `workflow-step-submission` trong quá trình phân loại để bắt đầu kiểm tra metadata tự động. Kiểm tra thành công sẽ đề xuất thay đổi catalog và tài liệu trong một draft PR để người duy trì review. Quy trình tự động không bao giờ cài, import, thực thi hay review code Python được gửi.
+Mở biểu mẫu chỉ áp dụng nhãn verdict `triage-must-have`. Maintainer áp dụng `workflow-step-submission` trong quá trình phân loại để bắt đầu kiểm tra metadata tự động. Kiểm tra thành công sẽ đề xuất thay đổi catalog và tài liệu trong một draft PR để maintainer review. Quy trình tự động không bao giờ cài, import, thực thi hay review code Python được gửi.
 
 Các mục được chấp nhận được công bố trong [`workflows/step-catalog.community.json`](https://github.com/github/spec-kit/blob/main/workflows/step-catalog.community.json). Catalog cộng đồng có sẵn ở chế độ **chỉ tìm kiếm**. Các mục được chấp nhận có thể xuất hiện trong `specify workflow step search` và `info`, nhưng `specify workflow step add <id>` sẽ không cài code thực thi từ nguồn đó. Sau khi review mã nguồn, hãy cài trực tiếp archive có phiên bản đã gửi bằng `--from`, hoặc dùng một catalog step được cấu hình riêng mà bạn cho phép cài một cách tường minh.
 
@@ -26,7 +26,7 @@ Các mục được chấp nhận được công bố trong [`workflows/step-cat
 | --- | --- | --- |
 | [Decision](https://github.com/markuswondrak/spec-kit-decision-step) (`decision`) | 0.9.0 | Các quyết định lựa chọn có giới hạn, điểm số và noul có kiểu, với xác suất gốc và chú giải điểm, dùng backend Jev và Laya. |
 
-Decision được duy trì bởi [Markus Wondrak](https://github.com/markuswondrak). Giống các bảng bài gửi cộng đồng khác, metadata tác giả thuộc về catalog; nó không được dùng thay cho việc ghi nhận người duy trì.
+Decision được duy trì bởi [Markus Wondrak](https://github.com/markuswondrak). Giống các bảng bài gửi cộng đồng khác, metadata tác giả thuộc về catalog; nó không được dùng thay cho việc ghi nhận maintainer.
 
 Decision khai báo tương thích runtime với Spec Kit `>=0.11.0`; cài [archive phát hành có phiên bản](https://github.com/markuswondrak/spec-kit-decision-step/releases/download/v0.9.0/decision-0.9.0.zip) của nó bằng `--from` yêu cầu Spec Kit `>=1.1.0`. Trường tương thích trong catalog chỉ mang tính khuyến nghị và không được trình cài step hiện tại thực thi.
 
@@ -50,7 +50,7 @@ Package phải đáp ứng hợp đồng hiện tại của trình cài và trì
 - `step.yml` và `__init__.py` là file thông thường, không phải symlink, ở gốc package. Archive có thể bọc package trong đúng một thư mục cấp cao nhất.
 - `step.type_key`, khóa/ID trong catalog và `StepBase.type_key` tương ứng phải giống hệt nhau.
 - ID là một thành phần đường dẫn an toàn duy nhất. Trình cài từ chối dấu phân cách, dấu chấm ở đầu, dấu chấm hoặc dấu cách ở cuối, tên dành riêng, ký tự điều khiển và ký tự không hợp lệ trong tên file trên Windows. Quy trình tự động của catalog còn yêu cầu chỉ gồm chữ thường, chữ số và dấu gạch ngang, bắt đầu bằng một chữ cái.
-- `__init__.py` định nghĩa một lớp con `StepBase` khớp với type key duy nhất đó. Các lớp bổ sung không khiến package cung cấp thêm loại step được đăng ký. Đây là cam kết của tác giả, không phải kiểm tra code của người duy trì.
+- `__init__.py` định nghĩa một lớp con `StepBase` khớp với type key duy nhất đó. Các lớp bổ sung không khiến package cung cấp thêm loại step được đăng ký. Đây là cam kết của tác giả, không phải kiểm tra code của maintainer.
 - Đường dẫn file bổ sung dùng dấu gạch chéo xuôi, là đường dẫn tương đối và không rỗng, không chứa đoạn rỗng, `.` hay `..`, và không trùng (không phân biệt hoa thường) với `step.yml`, `__init__.py`, file khác hoặc thư mục package.
 - Package nằm trong giới hạn hiện tại của trình cài: 512 mục được giữ (tính cả file và thư mục), 32 cấp thư mục và 50 MiB nội dung được giữ. Việc tải bài gửi còn có giới hạn 10 MiB mỗi file.
 - `.git`, `__pycache__` và `.DS_Store` bị loại khỏi cài đặt; quy trình tự động cho bài gửi từ chối các biến thể trùng tên không phân biệt hoa thường của các thành phần này.
@@ -85,7 +85,7 @@ Tài liệu có thể là bất kỳ file Markdown nào được ghim theo tag (
 
 Trình cài archive trực tiếp bằng `--from` hiện không nhận hay xác minh digest của archive. Các trường Download URL và Testing Details được gửi cung cấp bằng chứng về bản phát hành có phiên bản và kiểm thử cài đặt, không phải bảo đảm nội dung bất biến; digest theo từng file bảo vệ đường cài riêng từ catalog. Quy trình tự động tải toàn bộ tập file đã khai báo trong một lượt để áp dụng ngân sách byte tích lũy. Nó không thực thi archive hay nội dung bên trong.
 
-Giấy phép phải là đúng một mã giấy phép SPDX từ danh sách giấy phép chính thức, khớp với giấy phép repository được phát hiện tại tag phát hành đã gửi. Mã không xác định hoặc giấy phép đã biết nhưng không khớp sẽ làm kiểm tra thất bại. Nếu không phát hiện được giấy phép của bản phát hành hoặc kết quả không rõ ràng, việc kiểm tra bị Blocked để chờ người duy trì làm rõ thay vì đoán giấy phép. Kiểm tra metadata này không phải ý kiến pháp lý hay kiểm định code.
+Giấy phép phải là đúng một mã giấy phép SPDX từ danh sách giấy phép chính thức, khớp với giấy phép repository được phát hiện tại tag phát hành đã gửi. Mã không xác định hoặc giấy phép đã biết nhưng không khớp sẽ làm kiểm tra thất bại. Nếu không phát hiện được giấy phép của bản phát hành hoặc kết quả không rõ ràng, việc kiểm tra bị Blocked để chờ maintainer làm rõ thay vì đoán giấy phép. Kiểm tra metadata này không phải ý kiến pháp lý hay kiểm định code.
 
 <a id="prepare-a-submission"></a>
 
@@ -107,8 +107,8 @@ Giấy phép phải là đúng một mã giấy phép SPDX từ danh sách giấ
 
 ## Kiểm tra metadata tự động
 
-Workflow do người duy trì kích hoạt kiểm tra metadata đầy đủ, định danh manifest khớp, URL bản phát hành/file được ghim, digest theo từng file, đường dẫn và giới hạn package, tài liệu, và cam kết kiểm thử của tác giả. Nó không review code được gửi hay khẳng định xác minh hành vi thực thi của nó.
+Workflow do maintainer kích hoạt kiểm tra metadata đầy đủ, định danh manifest khớp, URL bản phát hành/file được ghim, digest theo từng file, đường dẫn và giới hạn package, tài liệu, và cam kết kiểm thử của tác giả. Nó không review code được gửi hay khẳng định xác minh hành vi thực thi của nó.
 
 Lỗi bài gửi đã được xác nhận tạo ra nhãn `validation-failed` và các chỉnh sửa cần thực hiện. Lỗi môi trường, gồm quyền, công cụ không có sẵn, timeout và lỗi HTTP tạm thời, được đánh dấu Blocked thay vì là lỗi của bài gửi. Chỉ job kết luận có bảo vệ mới có thể áp dụng `validation-passed`, sau khi công bố thành công draft PR catalog.
 
-Phiên bản mới giữ nguyên lịch sử phát hành hiện có trong catalog. Việc sửa metadata cùng phiên bản phải được nêu rõ và không thể thay URL file hay digest; hãy phát hành phiên bản mới khi nội dung package thay đổi. Trình xác minh do repository sở hữu chụp snapshot catalog mong đợi trước khi sửa và kiểm tra toàn bộ catalog được sinh ra trước khi tạo PR, gồm việc chuyển bản phát hành hiện tại trước đó và giữ nguyên lịch sử. Digest bị thiếu của bản phát hành hiện có sẽ chặn việc công bố cho đến khi người duy trì sửa.
+Phiên bản mới giữ nguyên lịch sử phát hành hiện có trong catalog. Việc sửa metadata cùng phiên bản phải được nêu rõ và không thể thay URL file hay digest; hãy phát hành phiên bản mới khi nội dung package thay đổi. Trình xác minh do repository sở hữu chụp snapshot catalog mong đợi trước khi sửa và kiểm tra toàn bộ catalog được sinh ra trước khi tạo PR, gồm việc chuyển bản phát hành hiện tại trước đó và giữ nguyên lịch sử. Digest bị thiếu của bản phát hành hiện có sẽ chặn việc công bố cho đến khi maintainer sửa.

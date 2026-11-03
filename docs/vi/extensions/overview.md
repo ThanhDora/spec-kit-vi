@@ -1137,7 +1137,7 @@ After creating tasks, sync to Jira:
 
 ### H: Làm sao biết một extension có an toàn không?
 
-**Đ**: Tìm huy hiệu ✓ Verified. Extension đã xác minh được người duy trì review. Luôn review code của extension trước khi cài.
+**Đ**: Tìm huy hiệu ✓ Verified. Extension đã xác minh được maintainer review. Luôn review code của extension trước khi cài.
 
 <a id="q-can-extensions-modify-spec-kit-core"></a>
 

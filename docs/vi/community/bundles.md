@@ -10,7 +10,7 @@
 <!-- vi-banner:end -->
 
 > [!NOTE]
-> Bundle cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Người duy trì chỉ xác minh metadata của bài gửi đầy đủ và đúng định dạng — họ **không review, kiểm định, bảo chứng hay hỗ trợ code của bundle hoặc các thành phần mà nó cài**. Hãy review manifest của bundle, catalog thành phần và repository nguồn trước khi cài, và tự cân nhắc khi sử dụng.
+> Bundle cộng đồng được tạo và duy trì độc lập bởi tác giả của chúng. Maintainer chỉ xác minh metadata của bài gửi đầy đủ và đúng định dạng — họ **không review, kiểm định, bảo chứng hay hỗ trợ code của bundle hoặc các thành phần mà nó cài**. Hãy review manifest của bundle, catalog thành phần và repository nguồn trước khi cài, và tự cân nhắc khi sử dụng.
 
 Bundle kết hợp các thành phần Spec Kit hiện có — extension, preset, workflow và step — thành một chồng duy nhất cho một vai trò hoặc nhóm. Chúng hữu ích khi người dùng cần cài cùng lúc một tập thành phần đã được kiểm thử thay vì chạy nhiều lệnh cài riêng lẻ.
 
@@ -59,7 +59,7 @@ specify bundle install example-bundle
 
 ## Phạm vi review
 
-Người duy trì kiểm tra rằng:
+Maintainer kiểm tra rằng:
 
 - Các trường của bài gửi đầy đủ và đúng định dạng.
 - URL của artifact phát hành và tài liệu truy cập được.
@@ -67,7 +67,7 @@ Người duy trì kiểm tra rằng:
 - Bài gửi nêu rõ mọi catalog thành phần cần thiết.
 - Mục catalog đề xuất dùng đúng cấu trúc mục catalog bundle mong đợi.
 
-Người duy trì không kiểm định hành vi của extension, preset, workflow, step hay script được cài. Người dùng nên review các thành phần đó trước khi cài một bundle cộng đồng.
+Maintainer không kiểm định hành vi của extension, preset, workflow, step hay script được cài. Người dùng nên review các thành phần đó trước khi cài một bundle cộng đồng.
 
 <a id="updating-a-bundle"></a>
 

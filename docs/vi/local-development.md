@@ -129,7 +129,7 @@ Trên Windows, bạn sẽ dùng các script `.ps1` thay thế (không cần chmo
 
 Làm theo [thiết kế integration cho agent](https://github.com/github/spec-kit/blob/main/design/integration.md#adding-an-agent)
 để biết contract triển khai, cách đăng ký và yêu cầu về độ phủ hành vi. Xem
-[đóng góp integration](../integrations/contributing.md) để biết về mục catalog
+[đóng góp integration](integrations/contributing.md) để biết về mục catalog
 và hướng dẫn gửi bài.
 
 <a id="7-run-lint--basic-checks"></a>

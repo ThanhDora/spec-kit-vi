@@ -1,4 +1,4 @@
-# Mục lục tài liệu tiếng Việt.
+# Mục lục tài liệu tiếng Việt (cùng thứ tự với docs/toc.yml).
 # Trang chưa được dịch trỏ về bản tiếng Anh (đánh dấu "(EN)").
 
 - name: Trang chủ
@@ -9,68 +9,216 @@
 
 - name: Bắt đầu
   items:
-    - name: Cài đặt
-      href: installation.md
-    - name: SDLC có agent của Spec Kit
-      href: guides/agentic-sdlc.md
-    - name: Phát triển hướng đặc tả
-      href: quickstart.md
-    - name: Sửa lỗi
-      href: guides/bugfix.md
-    - name: Đánh giá ý tưởng
-      href: guides/assessment.md
-    - name: Dự án có sẵn
-      href: guides/existing-projects.md
-    - name: Tùy biến hoặc tự mang quy trình
-      href: guides/customization.md
-    - name: Nâng cấp
-      href: upgrade.md
-    - name: Cài uv
-      href: install/uv.md
-    - name: Cài từ PyPI
-      href: install/pypi.md
-    - name: Cài bằng pipx
-      href: install/pipx.md
-    - name: Dùng một lần (uvx)
-      href: install/one-time.md
-    - name: Doanh nghiệp / Air-gapped
-      href: install/air-gapped.md
+  - name: Cài đặt
+    href: installation.md
+  - name: SDLC có agent của Spec Kit
+    href: guides/agentic-sdlc.md
+  - name: Phát triển hướng đặc tả
+    href: quickstart.md
+  - name: Sửa lỗi
+    href: guides/bugfix.md
+  - name: Đánh giá ý tưởng
+    href: guides/assessment.md
+  - name: Dự án có sẵn
+    href: guides/existing-projects.md
+  - name: Tùy biến hoặc tự mang quy trình
+    href: guides/customization.md
+  - name: Nâng cấp
+    href: upgrade.md
+  - name: Cài uv
+    href: install/uv.md
+  - name: Cài từ PyPI
+    href: install/pypi.md
+  - name: Cài bằng pipx
+    href: install/pipx.md
+  - name: Dùng một lần (uvx)
+    href: install/one-time.md
+  - name: Doanh nghiệp / Air-gapped
+    href: install/air-gapped.md
+
+- name: Integration
+  href: integrations/index.md
+  items:
+  - name: Tổng quan
+    href: integrations/index.md
+  - name: Tài liệu tham khảo CLI
+    href: integrations/cli.md
+  - name: Alquimia AI
+    href: integrations/alquimia.md
+  - name: Amp
+    href: integrations/amp.md
+  - name: Antigravity
+    href: integrations/agy.md
+  - name: Auggie CLI
+    href: integrations/auggie.md
+  - name: Claude Code
+    href: integrations/claude.md
+  - name: Cline
+    href: integrations/cline.md
+  - name: CodeBuddy CLI
+    href: integrations/codebuddy.md
+  - name: Codex CLI
+    href: integrations/codex.md
+  - name: Command Code
+    href: integrations/command-code.md
+  - name: Cursor
+    href: integrations/cursor-agent.md
+  - name: DeepSeek Harness
+    href: integrations/dsh.md
+  - name: Devin for Terminal
+    href: integrations/devin.md
+  - name: Docker Agent
+    href: integrations/docker-agent.md
+  - name: Factory Droid
+    href: integrations/droid.md
+  - name: Firebender
+    href: integrations/firebender.md
+  - name: Forge
+    href: integrations/forge.md
+  - name: Gemini CLI
+    href: integrations/gemini.md
+  - name: GitHub Copilot
+    href: integrations/copilot.md
+  - name: Goose
+    href: integrations/goose.md
+  - name: Grok Build
+    href: integrations/grok.md
+  - name: Hermes
+    href: integrations/hermes.md
+  - name: IBM Bob
+    href: integrations/bob.md
+  - name: Junie
+    href: integrations/junie.md
+  - name: Kilo Code
+    href: integrations/kilocode.md
+  - name: Kimi Code
+    href: integrations/kimi.md
+  - name: Kiro CLI
+    href: integrations/kiro-cli.md
+  - name: Lingma
+    href: integrations/lingma.md
+  - name: MiniMax Code
+    href: integrations/mcode.md
+  - name: Mistral Vibe
+    href: integrations/vibe.md
+  - name: Muse Code
+    href: integrations/muse.md
+  - name: None (chỉ phần khung dùng chung)
+    href: integrations/none.md
+  - name: Oh My Pi
+    href: integrations/omp.md
+  - name: opencode
+    href: integrations/opencode.md
+  - name: Pi Coding Agent
+    href: integrations/pi.md
+  - name: Qoder CLI
+    href: integrations/qodercli.md
+  - name: Qwen Code
+    href: integrations/qwen.md
+  - name: RovoDev
+    href: integrations/rovodev.md
+  - name: SHAI (OVHcloud)
+    href: integrations/shai.md
+  - name: Tabnine CLI
+    href: integrations/tabnine.md
+  - name: Trae
+    href: integrations/trae.md
+  - name: ZCode
+    href: integrations/zcode.md
+  - name: Zed
+    href: integrations/zed.md
+  - name: Generic (dùng agent của riêng bạn)
+    href: integrations/generic.md
+  - name: Catalog và adapter bên ngoài
+    href: integrations/catalog.md
+  - name: Đóng góp integration
+    href: integrations/contributing.md
+
+- name: Extension (EN)
+  href: ../extensions/overview.md
+  items:
+  - name: Tổng quan (EN)
+    href: ../extensions/overview.md
+  - name: Phát triển extension (EN)
+    href: ../extensions/developing.md
+  - name: Tài liệu tham khảo API (EN)
+    href: ../extensions/api.md
+  - name: Phát hành (EN)
+    href: ../extensions/publishing.md
+
+- name: Tài liệu tham khảo
+  items:
+  - name: Tổng quan (EN)
+    href: ../reference/overview.md
+  - name: Lệnh lõi (EN)
+    href: ../reference/core.md
+  - name: MCP server (EN)
+    href: ../reference/mcp.md
+  - name: Quản lý integration
+    href: integrations/cli.md
+  - name: Catalog (EN)
+    href: ../reference/catalogs.md
+  - name: Extension (EN)
+    href: ../reference/extensions.md
+  - name: Preset (EN)
+    href: ../reference/presets.md
+  - name: Artifact (EN)
+    href: ../reference/artifacts.md
+  - name: Workflow (EN)
+    href: ../reference/workflows.md
+  - name: Bundle (EN)
+    href: ../reference/bundles.md
+  - name: SDD có agent (EN)
+    href: ../reference/agentic-sdd.md
+  - name: Sửa lỗi có agent (EN)
+    href: ../reference/agentic-bugfix.md
+  - name: Đánh giá ý tưởng có agent (EN)
+    href: ../reference/agentic-assessment.md
+  - name: Xác thực (EN)
+    href: ../reference/authentication.md
 
 - name: Khái niệm
   items:
-    - name: SDD là gì?
-      href: concepts/sdd.md
-    - name: Các mô hình lưu giữ đặc tả
-      href: concepts/spec-persistence.md
-    - name: Xử lý tính năng phức tạp
-      href: concepts/complex-features.md
-    - name: Đặc tả của các đặc tả
-      href: concepts/spec-of-specs.md
+  - name: SDD là gì?
+    href: concepts/sdd.md
+  - name: Các mô hình lưu giữ đặc tả
+    href: concepts/spec-persistence.md
+  - name: Xử lý tính năng phức tạp
+    href: concepts/complex-features.md
+  - name: Đặc tả của các đặc tả
+    href: concepts/spec-of-specs.md
 
 - name: Phát triển
   items:
-    - name: Phát triển cục bộ
-      href: local-development.md
-    - name: Phát triển đặc tả
-      href: guides/evolving-specs.md
-    - name: Phát triển hướng contract
-      href: guides/contract-driven-development.md
-    - name: Monorepo
-      href: guides/monorepo.md
+  - name: Phát triển cục bộ
+    href: local-development.md
+  - name: Phát triển đặc tả
+    href: guides/evolving-specs.md
+  - name: Phát triển hướng contract
+    href: guides/contract-driven-development.md
+  - name: Monorepo
+    href: guides/monorepo.md
+
+- name: Cộng đồng (EN)
+  href: ../community/overview.md
+  items:
+  - name: Tổng quan (EN)
+    href: ../community/overview.md
+  - name: Extension (EN)
+    href: ../community/extensions.md
+  - name: Preset (EN)
+    href: ../community/presets.md
+  - name: Bundle (EN)
+    href: ../community/bundles.md
+  - name: Các loại workflow step (EN)
+    href: ../community/workflow-steps.md
+  - name: Hướng dẫn từng bước (EN)
+    href: ../community/walkthroughs.md
+  - name: Dự án bạn bè (EN)
+    href: ../community/friends.md
 
 - name: Bảng thuật ngữ
   href: GLOSSARY.md
-
-- name: Chưa dịch (EN)
-  items:
-    - name: Integration (EN)
-      href: ../integrations/index.md
-    - name: Extension (EN)
-      href: ../extensions/overview.md
-    - name: Tài liệu tham khảo (EN)
-      href: ../reference/overview.md
-    - name: Cộng đồng (EN)
-      href: ../community/overview.md
 
 - name: English
   href: ../index.md

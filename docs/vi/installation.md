@@ -104,8 +104,8 @@ specify init <project_name> --integration omp
 
 Các ví dụ trong README dùng chế độ skills mặc định của GitHub Copilot. Để dùng
 agent được hỗ trợ khác, thay `copilot` bằng
-[khóa integration](../integrations/index.md) của agent đó. Xem
-[Cách gọi lệnh](../integrations/cli.md#command-invocation) để biết cú pháp
+[khóa integration](integrations/index.md) của agent đó. Xem
+[Cách gọi lệnh](integrations/cli.md#command-invocation) để biết cú pháp
 mà từng agent và chế độ sử dụng.
 
 <a id="specify-script-type-shell-powershell-or-python"></a>

@@ -34,7 +34,7 @@ specify extension add bug
 Sau đó mở agent lập trình trong thư mục đó. Các ví dụ dưới đây dùng
 chế độ skills mặc định của GitHub Copilot (`--integration copilot`). Các agent khác
 cung cấp cùng các bước với
-[cú pháp gọi lệnh](../../integrations/cli.md#command-invocation) riêng.
+[cú pháp gọi lệnh](../integrations/cli.md#command-invocation) riêng.
 Gọi từng skill `/speckit-bug-*` riêng biệt trong khung chat của agent và review
 kết quả trước khi tiếp tục. Đây là skill của agent, không phải lệnh terminal;
 lệnh terminal ở trên chỉ để cài extension.

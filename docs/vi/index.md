@@ -70,7 +70,7 @@ Xác định thứ cần xây dựng trước khi bắt tay xây dựng. Templat
 
 Chạy `specify init` với agent bạn chọn, Spec Kit sẽ tự động thiết lập đúng file lệnh và cấu trúc thư mục. Nếu agent của bạn không có trong danh sách, integration `generic` là lối thoát dùng được cho mọi công cụ.
 
-<a href="../integrations/index.md" class="pillar-link">Xem mọi integration →</a>
+<a href="integrations/index.md" class="pillar-link">Xem mọi integration →</a>
 
 </div>
 

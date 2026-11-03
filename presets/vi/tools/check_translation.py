@@ -222,6 +222,17 @@ def resolve(target: str, page: str) -> tuple[str, str]:
     return posixpath.normpath(posixpath.join(posixpath.dirname(page), path)), frag
 
 
+def join_soft_breaks(text: str) -> str:
+    """Join soft line breaks (CommonMark lets code spans span them)."""
+    text = re.sub(r"[ \t]*\n(?![ \t]*\n)(?:[ \t]*+)(?![-*+]\s|[>|#]|\d+[.)]\s)", " ", text)
+    return text
+
+
+def code_spans(text: str) -> list[str]:
+    text = join_soft_breaks(strip_fences(text))
+    return INLINE_CODE.findall(text) + HTML_CODE.findall(text)
+
+
 def compare_docs(repo: Path, en_path: Path, vi_path: Path) -> list[str]:
     errors: list[str] = []
     docs = repo / "docs"
@@ -234,8 +245,8 @@ def compare_docs(repo: Path, en_path: Path, vi_path: Path) -> list[str]:
         a, b = Counter(pat.findall(en_t)), Counter(pat.findall(vi_t))
         if a != b:
             errors.append(f"{name}: missing={dict(a - b)} extra={dict(b - a)}")
-    a = Counter(INLINE_CODE.findall(strip_fences(en)) + HTML_CODE.findall(strip_fences(en)))
-    b = Counter(INLINE_CODE.findall(strip_fences(vi)) + HTML_CODE.findall(strip_fences(vi)))
+    a = Counter(code_spans(en))
+    b = Counter(code_spans(vi))
     if a != b:
         errors.append(f"inline code: missing={dict(a - b)} extra={dict(b - a)}")
     fa, fb = fenced_blocks(en), fenced_blocks(vi)

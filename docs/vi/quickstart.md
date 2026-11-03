@@ -22,7 +22,7 @@ có đáng đầu tư hay không, hãy làm theo [hướng dẫn nhanh đánh gi
 
 Các bước trong bài dùng chế độ skills mặc định của GitHub Copilot (`/speckit-*`).
 Với agent hoặc chế độ khác, xem
-[Cách gọi lệnh](../integrations/cli.md#command-invocation).
+[Cách gọi lệnh](integrations/cli.md#command-invocation).
 Gọi từng skill `/speckit-*` riêng biệt trong khung chat của agent và review
 kết quả trước khi sang bước tiếp theo. Đây là skill của agent, không phải lệnh
 terminal; chỉ việc cài CLI và thiết lập dự án mới dùng terminal.

@@ -16,7 +16,11 @@
           "vi/toc.yml",
           "vi/install/*.md",
           "vi/concepts/*.md",
-          "vi/guides/*.md"
+          "vi/guides/*.md",
+          "vi/integrations/*.md",
+          "vi/extensions/*.md",
+          "vi/reference/*.md",
+          "vi/community/*.md"
         ]
       },
       {

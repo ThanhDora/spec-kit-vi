@@ -177,7 +177,7 @@ specify integration upgrade claude
 specify integration upgrade codex
 ```
 
-Xem [tài liệu tham khảo về integration](../integrations/cli.md#upgrade-an-integration) để biết các tùy chọn như `--script`, `--integration-options` và `--force`.
+Xem [tài liệu tham khảo về integration](integrations/cli.md#upgrade-an-integration) để biết các tùy chọn như `--script`, `--integration-options` và `--force`.
 
 <a id="3-update-installed-extensions"></a>
 

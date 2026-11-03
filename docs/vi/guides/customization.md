@@ -32,8 +32,8 @@ tổ chức của bạn, hoặc mang vào một quy trình hoàn toàn khác.
 
 Integration quyết định cách lệnh và skill được đưa tới agent lập trình
 của bạn; chúng khác với extension, vốn kết nối tới công cụ hoặc
-dịch vụ bên ngoài. Xem [hướng dẫn integration](../../integrations/index.md) để biết các
-agent được hỗ trợ và cách thiết lập, hoặc [đóng góp integration](../../integrations/contributing.md)
+dịch vụ bên ngoài. Xem [hướng dẫn integration](../integrations/index.md) để biết các
+agent được hỗ trợ và cách thiết lập, hoặc [đóng góp integration](../integrations/contributing.md)
 để phát triển một adapter.
 
 Workflow step package mở rộng các loại step mà workflow có thể dùng. Xem

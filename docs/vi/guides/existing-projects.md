@@ -20,7 +20,7 @@ và dùng quy trình cho thay đổi có giới hạn tiếp theo.
 Trước khi khởi tạo, hãy commit hoặc stash công việc đang dở và tạo một branch cho việc
 áp dụng. Nhờ vậy mọi file được sinh ra đều hiện rõ trong một lần code review bình thường.
 
-Chọn [khóa integration](../../integrations/index.md) cho agent lập trình
+Chọn [khóa integration](../integrations/index.md) cho agent lập trình
 bạn đang dùng. Sau đó chạy lệnh từ thư mục gốc của repository:
 
 ```bash

@@ -137,4 +137,4 @@ quyết định cho lệnh đặc tả:
 
 Tiếp tục với [hướng dẫn nhanh SDD](../quickstart.md). Để biết điều kiện tiên quyết của từng bước,
 quy tắc đặt slug và yêu cầu về bằng chứng, xem
-[tài liệu tham khảo lệnh đánh giá ý tưởng](../../reference/agentic-assessment.md).
+[tài liệu tham khảo lệnh đánh giá ý tưởng](../reference/agentic-assessment.md).

@@ -182,7 +182,7 @@ Thực hiện các tác vụ trong `tasks.md` theo thứ tự phụ thuộc. Tr�
 ```
 
 > [!TIP]
-> Để xem tài liệu tham khảo đầy đủ về từng lệnh — đối số, đầu ra, triển khai theo giai đoạn và cách các lệnh phối hợp với nhau — xem [Agentic SDD](../reference/agentic-sdd.md).
+> Để xem tài liệu tham khảo đầy đủ về từng lệnh — đối số, đầu ra, triển khai theo giai đoạn và cách các lệnh phối hợp với nhau — xem [Agentic SDD](reference/agentic-sdd.md).
 
 <a id="key-principles"></a>
 
@@ -198,7 +198,7 @@ Thực hiện các tác vụ trong `tasks.md` theo thứ tự phụ thuộc. Tr�
 
 ## Bước tiếp theo
 
-- Xem tài liệu tham khảo [Agentic SDD](../reference/agentic-sdd.md) để biết đầy đủ chi tiết của từng lệnh
+- Xem tài liệu tham khảo [Agentic SDD](reference/agentic-sdd.md) để biết đầy đủ chi tiết của từng lệnh
 - Tìm hiểu cách [tùy biến quy trình](guides/customization.md) bằng extension, preset, workflow và bundle
 - Đọc [toàn bộ phương pháp luận](https://github.com/github/spec-kit/blob/main/spec-driven.md) để có hướng dẫn chuyên sâu
 - So sánh [các template lõi](https://github.com/github/spec-kit/tree/main/templates) với

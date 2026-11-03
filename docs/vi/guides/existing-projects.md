@@ -105,7 +105,7 @@ Tiếp tục với quy trình thông thường:
 
 Để biết chi tiết các lệnh và các cổng kiểm soát chất lượng tùy chọn, xem
 [Hướng dẫn nhanh](../quickstart.md) và
-[tài liệu tham khảo Agentic SDD](../../reference/agentic-sdd.md).
+[tài liệu tham khảo Agentic SDD](../reference/agentic-sdd.md).
 
 <a id="5-decide-how-specs-will-age"></a>
 

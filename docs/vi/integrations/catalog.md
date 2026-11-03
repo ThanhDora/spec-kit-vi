@@ -38,7 +38,7 @@ Lớp được cấu hình đầu tiên thay thế các lớp thấp hơn. Trong
 3. **Cấu hình người dùng** — `~/.specify/integration-catalogs.yml` trong thư mục home của người dùng
 4. **Mặc định có sẵn** — `catalog.json` + `catalog.community.json`
 
-Thêm catalog dự án đầu tiên sẽ thay thế các nguồn mặc định, trừ khi bạn liệt kê cả chúng trong file dự án. Xem [Catalog](../../reference/catalogs.md) để có hướng dẫn chung về tìm kiếm, độ tin cậy và nguồn riêng tư.
+Thêm catalog dự án đầu tiên sẽ thay thế các nguồn mặc định, trừ khi bạn liệt kê cả chúng trong file dự án. Xem [Catalog](../reference/catalogs.md) để có hướng dẫn chung về tìm kiếm, độ tin cậy và nguồn riêng tư.
 
 Ví dụ `integration-catalogs.yml`:
 

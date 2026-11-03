@@ -64,7 +64,7 @@ specify integration switch none
 ```
 
 > [!IMPORTANT]
-> Đừng sửa tay các lệnh hoặc skill của agent do Spec Kit sinh ra. Hãy duy trì tùy biến trong các [preset](../../reference/presets.md) đã được review hoặc [ghi đè cục bộ trong dự án](../guides/customization.md#project-local-overrides-and-resolution). Trước khi commit, dùng [`specify integration status`](cli.md#report-integration-status) để xác nhận `none` là integration duy nhất đã cài và là mặc định. Review Git diff và các file agent còn giữ lại.
+> Đừng sửa tay các lệnh hoặc skill của agent do Spec Kit sinh ra. Hãy duy trì tùy biến trong các [preset](../reference/presets.md) đã được review hoặc [ghi đè cục bộ trong dự án](../guides/customization.md#project-local-overrides-and-resolution). Trước khi commit, dùng [`specify integration status`](cli.md#report-integration-status) để xác nhận `none` là integration duy nhất đã cài và là mặc định. Review Git diff và các file agent còn giữ lại.
 
 Nhóm có thể thêm kiểm tra CI cho baseline đã commit và kiểm tra pre-commit tùy chọn cho các file đã stage.
 

@@ -96,6 +96,6 @@ có thể lần theo bản sửa từ triệu chứng đến bằng chứng.
 
 ## Tìm hiểu thêm
 
-- [Tài liệu tham khảo lệnh bug](../../reference/agentic-bugfix.md): đối số, cách xử lý slug và contract đầu ra.
+- [Tài liệu tham khảo lệnh bug](../reference/agentic-bugfix.md): đối số, cách xử lý slug và contract đầu ra.
 - [Hướng dẫn nhanh SDD](../quickstart.md): dùng khi công việc là một tính năng mới chứ không phải sửa lỗi.
 - [Hướng dẫn nhanh đánh giá ý tưởng](assessment.md): điều tra xem một thay đổi được đề xuất có đáng theo đuổi hay không.

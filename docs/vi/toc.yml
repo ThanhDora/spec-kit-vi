@@ -148,34 +148,34 @@
 
 - name: Tài liệu tham khảo
   items:
-  - name: Tổng quan (EN)
-    href: ../reference/overview.md
-  - name: Lệnh lõi (EN)
-    href: ../reference/core.md
-  - name: MCP server (EN)
-    href: ../reference/mcp.md
+  - name: Tổng quan
+    href: reference/overview.md
+  - name: Lệnh lõi
+    href: reference/core.md
+  - name: MCP server
+    href: reference/mcp.md
   - name: Quản lý integration
     href: integrations/cli.md
-  - name: Catalog (EN)
-    href: ../reference/catalogs.md
-  - name: Extension (EN)
-    href: ../reference/extensions.md
-  - name: Preset (EN)
-    href: ../reference/presets.md
-  - name: Artifact (EN)
-    href: ../reference/artifacts.md
-  - name: Workflow (EN)
-    href: ../reference/workflows.md
-  - name: Bundle (EN)
-    href: ../reference/bundles.md
-  - name: SDD có agent (EN)
-    href: ../reference/agentic-sdd.md
-  - name: Sửa lỗi có agent (EN)
-    href: ../reference/agentic-bugfix.md
-  - name: Đánh giá ý tưởng có agent (EN)
-    href: ../reference/agentic-assessment.md
-  - name: Xác thực (EN)
-    href: ../reference/authentication.md
+  - name: Catalog
+    href: reference/catalogs.md
+  - name: Extension
+    href: reference/extensions.md
+  - name: Preset
+    href: reference/presets.md
+  - name: Artifact
+    href: reference/artifacts.md
+  - name: Workflow
+    href: reference/workflows.md
+  - name: Bundle
+    href: reference/bundles.md
+  - name: SDD có agent
+    href: reference/agentic-sdd.md
+  - name: Sửa lỗi có agent
+    href: reference/agentic-bugfix.md
+  - name: Đánh giá ý tưởng có agent
+    href: reference/agentic-assessment.md
+  - name: Xác thực
+    href: reference/authentication.md
 
 - name: Khái niệm
   items:

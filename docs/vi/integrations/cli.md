@@ -381,7 +381,7 @@ Hướng dẫn của các agent phân biệt thiết lập IDE với khả năng
 
 Adapter có CLI hỗ trợ `SPECKIT_INTEGRATION_<KEY>_EXECUTABLE` để chọn file thực thi và `SPECKIT_INTEGRATION_<KEY>_EXTRA_ARGS` để thêm đối số CLI, trong đó `<KEY>` viết hoa và dấu gạch ngang được thay bằng dấu gạch dưới. Đối số bổ sung được phân tích theo quy tắc trích dẫn của POSIX shell. Vị trí đặt và cách xử lý cờ trùng lặp khác nhau tùy adapter; xem hướng dẫn của agent, đặc biệt với Docker Agent và Goose.
 
-`--integration-options` khi thiết lập tách biệt với [`integration_args` và `integration_options`](../../reference/workflows.md#per-step-integration-configuration) của workflow. Adapter từ chối cấu hình theo từng step không rỗng trừ khi chúng có triển khai nó; hiện Docker Agent cung cấp cấu hình agent/an toàn có cấu trúc. Cờ phê duyệt headless, việc chuyển tiếp mô hình và hỗ trợ đầu ra có cấu trúc cũng tùy adapter, không phải bảo đảm chung.
+`--integration-options` khi thiết lập tách biệt với [`integration_args` và `integration_options`](../reference/workflows.md#per-step-integration-configuration) của workflow. Adapter từ chối cấu hình theo từng step không rỗng trừ khi chúng có triển khai nó; hiện Docker Agent cung cấp cấu hình agent/an toàn có cấu trúc. Cờ phê duyệt headless, việc chuyển tiếp mô hình và hỗ trợ đầu ra có cấu trúc cũng tùy adapter, không phải bảo đảm chung.
 
 <a id="faq"></a>
 

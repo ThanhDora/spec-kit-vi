@@ -91,10 +91,10 @@ Kể cả những quy trình hoàn toàn khác:
 - **MAQA** — điều phối nhiều agent với các cổng kiểm soát đảm bảo chất lượng
 - **Fiction Book Writing** — viết tiểu thuyết và văn xuôi dài, từ story bible đến bản thảo nộp đi
 
-<a href="../reference/presets.md" class="pillar-link">Preset →</a>&nbsp;&nbsp;
-<a href="../reference/extensions.md" class="pillar-link">Extension →</a>&nbsp;&nbsp;
-<a href="../reference/workflows.md" class="pillar-link">Workflow →</a>&nbsp;&nbsp;
-<a href="../reference/bundles.md" class="pillar-link">Bundle →</a>
+<a href="reference/presets.md" class="pillar-link">Preset →</a>&nbsp;&nbsp;
+<a href="reference/extensions.md" class="pillar-link">Extension →</a>&nbsp;&nbsp;
+<a href="reference/workflows.md" class="pillar-link">Workflow →</a>&nbsp;&nbsp;
+<a href="reference/bundles.md" class="pillar-link">Bundle →</a>
 
 </div>
 
@@ -109,7 +109,7 @@ Hoạt động offline, sau tường lửa và trên **Windows, macOS và Linux*
 Các extension cộng đồng như CI Guard và Architecture Guard bổ sung cổng kiểm soát tuân thủ và quản trị phù hợp với cách nhóm của bạn đang làm việc.
 
 <a href="install/air-gapped.md" class="pillar-link">Doanh nghiệp / Air-gapped →</a>&nbsp;&nbsp;
-<a href="../reference/overview.md" class="pillar-link">Tài liệu tham khảo →</a>
+<a href="reference/overview.md" class="pillar-link">Tài liệu tham khảo →</a>
 
 </div>
 
@@ -191,7 +191,7 @@ Các extension cộng đồng như CI Guard và Architecture Guard bổ sung c�
     <strong>Nâng cấp</strong>
     <span>Giữ dự án Spec Kit hiện có luôn cập nhật qua các bản phát hành</span>
   </a>
-  <a href="../reference/overview.md" class="nav-card">
+  <a href="reference/overview.md" class="nav-card">
     <strong>Tài liệu tham khảo</strong>
     <span>Lệnh lõi, catalog, integration, extension, preset và workflow</span>
   </a>

@@ -37,7 +37,7 @@ agent được hỗ trợ và cách thiết lập, hoặc [đóng góp integrati
 để phát triển một adapter.
 
 Workflow step package mở rộng các loại step mà workflow có thể dùng. Xem
-[custom step package](../../reference/workflows.md#custom-step-packages) để biết cách
+[custom step package](../reference/workflows.md#custom-step-packages) để biết cách
 cài đặt và thực thi, và
 [workflow step của cộng đồng](../../community/workflow-steps.md) để tìm kiếm và nhận
 hướng dẫn đóng góp. Hãy review các package thực thi được trước khi cài hoặc dùng chúng.
@@ -59,7 +59,7 @@ Ví dụ gồm tích hợp Jira, review code sau khi triển khai, truy vết te
 và chẩn đoán sức khỏe dự án. Các extension đi kèm
 [bug](bugfix.md) và [assess](assessment.md) là ví dụ chính thức.
 Duyệt [extension của cộng đồng](../../community/extensions.md), hoặc dùng
-[tài liệu tham khảo extension](../../reference/extensions.md) để biết cách quản lý và cấu hình.
+[tài liệu tham khảo extension](../reference/extensions.md) để biết cách quản lý và cấu hình.
 
 <a id="presets-change-how-a-process-works"></a>
 
@@ -83,7 +83,7 @@ cho thấy thuật ngữ có thể được thay đổi sâu rộng đến mức
 
 Nhiều preset có thể xếp chồng lên nhau theo độ ưu tiên. Xem
 [preset của cộng đồng](../../community/presets.md) để có ví dụ và
-[tài liệu tham khảo preset](../../reference/presets.md) để biết cách cài đặt, các chiến lược
+[tài liệu tham khảo preset](../reference/presets.md) để biết cách cài đặt, các chiến lược
 kết hợp và thứ tự ưu tiên.
 
 <a id="project-local-overrides-and-resolution"></a>
@@ -106,7 +106,7 @@ chồng đó mỗi lần gọi lệnh. Gỡ một thành phần đang ghi đè
 sẽ khôi phục lớp lệnh còn lại thông qua bước đồng bộ lại.
 
 Khi không có tùy chỉnh nào, các giá trị mặc định của phần lõi được áp dụng.
-[Tài liệu tham khảo về phân giải file](../../reference/presets.md#file-resolution) là
+[Tài liệu tham khảo về phân giải file](../reference/presets.md#file-resolution) là
 hướng dẫn chính thức về đường dẫn, độ ưu tiên và cách kết hợp prepend/append/wrap.
 
 <a id="bundles-role-based-setups"></a>
@@ -125,7 +125,7 @@ specify bundle install <bundle-id>
 ```
 
 Xem `info` trước khi cài để biết tập thành phần sau khi phân giải. Xem
-[tài liệu tham khảo bundle](../../reference/bundles.md) để biết về cập nhật, gỡ bỏ, chính sách catalog,
+[tài liệu tham khảo bundle](../reference/bundles.md) để biết về cập nhật, gỡ bỏ, chính sách catalog,
 giới hạn khi offline, kiểm định và phát hành, và
 [các manifest mẫu](https://github.com/github/spec-kit/tree/main/examples/bundles)
 cho các thiết lập dành cho product manager, business analyst, nhà nghiên cứu bảo mật và lập trình viên.
@@ -137,4 +137,4 @@ cho các thiết lập dành cho product manager, business analyst, nhà nghiên
 Các thành phần cộng đồng được duy trì độc lập. Hãy review mã nguồn trước khi
 cài và tự cân nhắc khi sử dụng. Truy cập
 [hướng dẫn cộng đồng](../../community/overview.md) để tìm thành phần hoặc phát hành thành phần
-của riêng bạn, và [tài liệu tham khảo workflow](../../reference/workflows.md) để tự động hóa một quy trình.
+của riêng bạn, và [tài liệu tham khảo workflow](../reference/workflows.md) để tự động hóa một quy trình.

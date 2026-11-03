@@ -222,3 +222,8 @@
       href: community/walkthroughs.md
     - name: Friends
       href: community/friends.md
+
+# Vietnamese translation
+- name: Tiếng Việt
+  href: vi/
+  topicHref: vi/index.md

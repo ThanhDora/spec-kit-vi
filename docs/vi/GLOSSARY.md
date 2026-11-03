@@ -1,6 +1,6 @@
 # Bảng thuật ngữ tiếng Việt cho Spec Kit
 
-Tài liệu này thống nhất cách dịch thuật ngữ trong bản Việt hóa Spec Kit ([README.vi.md](../../README.vi.md), [spec-driven.vi.md](../../spec-driven.vi.md) và [preset `vi`](../../presets/vi/README.md)). Mục tiêu là tiếng Việt tự nhiên, chuyên nghiệp, đúng cách dân phát triển phần mềm Việt Nam đang nói, đồng thời không làm hỏng bất kỳ thứ gì mà CLI và agent phụ thuộc vào.
+Tài liệu này thống nhất cách dịch thuật ngữ trong bản Việt hóa Spec Kit ([README.vi.md](../../README.vi.md), [spec-driven.vi.md](../../spec-driven.vi.md), [tài liệu tiếng Việt](index.md) và [preset `vi`](../../presets/vi/README.md)). Mục tiêu là tiếng Việt tự nhiên, chuyên nghiệp, đúng cách dân phát triển phần mềm Việt Nam đang nói, đồng thời không làm hỏng bất kỳ thứ gì mà CLI và agent phụ thuộc vào.
 
 ## 1. Nguyên tắc chung
 
@@ -30,7 +30,7 @@ Tài liệu này thống nhất cách dịch thuật ngữ trong bản Việt h�
 | Nội dung code | code mẫu, lệnh shell, pattern ignore (`node_modules/`, `*.pyc`...) | Là mã chạy được |
 | Tên sản phẩm | Spec Kit, Specify CLI, GitHub Copilot, Claude Code, Cursor... | Tên riêng |
 
-Script `presets/vi/tools/check_translation.py` kiểm tra tự động các quy tắc trên cho preset `vi`.
+Script `presets/vi/tools/check_translation.py` kiểm tra tự động các quy tắc trên cho preset `vi` và cho các trang trong `docs/vi/` (khối code, inline code, link, anchor và cấu trúc heading phải khớp với bản tiếng Anh).
 
 ## 3. Bảng thuật ngữ
 
@@ -149,3 +149,55 @@ Các lệnh tiếng Việt tham chiếu tới tên mục dưới đây, nên ph�
 | If no hooks are registered, skip silently. | Nếu không có hook nào được đăng ký, lặng lẽ bỏ qua. | Nếu không có móc nào được ghi danh, bỏ qua một cách im lặng. |
 | Every requirement must be testable. | Mỗi yêu cầu phải kiểm thử được. | Mọi yêu cầu phải có khả năng được thử nghiệm. |
 | Tests are OPTIONAL. | Test là TÙY CHỌN. | Các bài kiểm tra là KHÔNG BẮT BUỘC. |
+
+## 6. Thuật ngữ trong tài liệu (docs)
+
+| Tiếng Anh | Tiếng Việt | Ghi chú |
+| --- | --- | --- |
+| quickstart | hướng dẫn nhanh | |
+| walkthrough | walkthrough / hướng dẫn từng bước | Giữ "walkthrough" khi là tên mục cộng đồng |
+| bundled, opt-in extension | extension đi kèm, chỉ chạy khi bạn chủ động bật | |
+| first-party | chính thức (first-party) | |
+| air-gapped | air-gapped | Môi trường cách ly hoàn toàn khỏi mạng |
+| wheel | wheel | Định dạng package Python |
+| editable install | bản cài editable | |
+| install route | cách cài đặt | |
+| pin (a version) | ghim (phiên bản) | |
+| upgrade / refresh | nâng cấp / làm mới | |
+| managed file | file được quản lý | File do Spec Kit cài và theo dõi trong manifest |
+| manifest-aware | dựa trên manifest | |
+| fallback | phương án dự phòng | |
+| escape hatch | lối thoát | |
+| runtime resolution | phân giải lúc chạy | |
+| source of truth | nguồn sự thật | |
+| reconcile / reconciliation | đối soát | |
+| drift | độ lệch / lệch nhau | |
+| flow-back / flow-forward / living spec | flow-back (chảy ngược) / flow-forward (chảy xuôi) / living spec (đặc tả sống) | Giữ tên tiếng Anh vì là tên mô hình |
+| spec-first / spec-anchored / spec-as-source | giữ nguyên, kèm giải thích lần đầu | |
+| roadmap | lộ trình | Tên file `roadmap.md`, `ROADMAP.md` giữ nguyên |
+| slice | lát cắt | |
+| epic | epic | |
+| context window / context compaction | cửa sổ ngữ cảnh / nén ngữ cảnh | |
+| sub-agent | sub-agent | |
+| hallucinate | bịa đặt (hallucinate) | |
+| greenfield / brownfield | greenfield / brownfield | |
+| contract-driven development | phát triển hướng contract | |
+| provider / consumer | bên cung cấp / bên sử dụng | |
+| authoritative | chính thức | "contract chính thức" |
+| idempotency | tính idempotent | |
+| rollout / rollback | rollout / rollback | |
+| breaking change | thay đổi phá vỡ tương thích | |
+| deterministic | tất định | |
+| agentic workflow | workflow agentic | |
+| maintainer / contributor | maintainer / người đóng góp | |
+| dogfooding | tự dùng (dogfooding) | |
+| appetite | mức đầu tư sẵn sàng bỏ ra (appetite) | Thuật ngữ của Shape Up |
+| verdict | kết luận | Giá trị `go`, `verified`... giữ nguyên |
+| scaffold / scaffolding | khung / phần khung, dựng khung | |
+
+### Quy ước riêng cho `docs/vi/`
+
+- Cấu trúc thư mục `docs/vi/` mô phỏng đúng `docs/` và có `toc.yml` riêng; mỗi trang có một khung ghi chú liên kết về bản tiếng Anh.
+- Link tới trang đã dịch trỏ vào `docs/vi/`; link tới trang chưa dịch trỏ về bản tiếng Anh.
+- Trước mỗi heading đã dịch có thẻ `<a id="...">` mang anchor của heading tiếng Anh, để mọi link có `#anchor` từ bản tiếng Anh vẫn dùng được.
+- Khối code, lệnh, ví dụ prompt trong khối code, tên file và placeholder giữ nguyên tiếng Anh.

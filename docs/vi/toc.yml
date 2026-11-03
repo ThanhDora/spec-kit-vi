@@ -1,0 +1,76 @@
+# Mục lục tài liệu tiếng Việt.
+# Trang chưa được dịch trỏ về bản tiếng Anh (đánh dấu "(EN)").
+
+- name: Trang chủ
+  href: index.md
+
+- name: Lịch sử dự án
+  href: history.md
+
+- name: Bắt đầu
+  items:
+    - name: Cài đặt
+      href: installation.md
+    - name: SDLC có agent của Spec Kit
+      href: guides/agentic-sdlc.md
+    - name: Phát triển hướng đặc tả
+      href: quickstart.md
+    - name: Sửa lỗi
+      href: guides/bugfix.md
+    - name: Đánh giá ý tưởng
+      href: guides/assessment.md
+    - name: Dự án có sẵn
+      href: guides/existing-projects.md
+    - name: Tùy biến hoặc tự mang quy trình
+      href: guides/customization.md
+    - name: Nâng cấp
+      href: upgrade.md
+    - name: Cài uv
+      href: install/uv.md
+    - name: Cài từ PyPI
+      href: install/pypi.md
+    - name: Cài bằng pipx
+      href: install/pipx.md
+    - name: Dùng một lần (uvx)
+      href: install/one-time.md
+    - name: Doanh nghiệp / Air-gapped
+      href: install/air-gapped.md
+
+- name: Khái niệm
+  items:
+    - name: SDD là gì?
+      href: concepts/sdd.md
+    - name: Các mô hình lưu giữ đặc tả
+      href: concepts/spec-persistence.md
+    - name: Xử lý tính năng phức tạp
+      href: concepts/complex-features.md
+    - name: Đặc tả của các đặc tả
+      href: concepts/spec-of-specs.md
+
+- name: Phát triển
+  items:
+    - name: Phát triển cục bộ
+      href: local-development.md
+    - name: Phát triển đặc tả
+      href: guides/evolving-specs.md
+    - name: Phát triển hướng contract
+      href: guides/contract-driven-development.md
+    - name: Monorepo
+      href: guides/monorepo.md
+
+- name: Bảng thuật ngữ
+  href: GLOSSARY.md
+
+- name: Chưa dịch (EN)
+  items:
+    - name: Integration (EN)
+      href: ../integrations/index.md
+    - name: Extension (EN)
+      href: ../extensions/overview.md
+    - name: Tài liệu tham khảo (EN)
+      href: ../reference/overview.md
+    - name: Cộng đồng (EN)
+      href: ../community/overview.md
+
+- name: English
+  href: ../index.md

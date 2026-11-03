@@ -134,17 +134,17 @@
   - name: Đóng góp integration
     href: integrations/contributing.md
 
-- name: Extension (EN)
-  href: ../extensions/overview.md
+- name: Extension
+  href: extensions/overview.md
   items:
-  - name: Tổng quan (EN)
-    href: ../extensions/overview.md
-  - name: Phát triển extension (EN)
-    href: ../extensions/developing.md
-  - name: Tài liệu tham khảo API (EN)
-    href: ../extensions/api.md
-  - name: Phát hành (EN)
-    href: ../extensions/publishing.md
+  - name: Tổng quan
+    href: extensions/overview.md
+  - name: Phát triển extension
+    href: extensions/developing.md
+  - name: Tài liệu tham khảo API
+    href: extensions/api.md
+  - name: Phát hành
+    href: extensions/publishing.md
 
 - name: Tài liệu tham khảo
   items:

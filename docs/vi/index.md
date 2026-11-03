@@ -152,7 +152,7 @@ Các extension cộng đồng như CI Guard và Architecture Guard bổ sung c�
   </div>
 </div>
 
-<a href="../community/presets.md">Preset</a> · <a href="../community/walkthroughs.md">Walkthrough</a> · <a href="../community/friends.md">Dự án bạn bè</a>
+<a href="community/presets.md">Preset</a> · <a href="community/walkthroughs.md">Walkthrough</a> · <a href="community/friends.md">Dự án bạn bè</a>
 
 </div>
 
@@ -195,7 +195,7 @@ Các extension cộng đồng như CI Guard và Architecture Guard bổ sung c�
     <strong>Tài liệu tham khảo</strong>
     <span>Lệnh lõi, catalog, integration, extension, preset và workflow</span>
   </a>
-  <a href="../community/overview.md" class="nav-card">
+  <a href="community/overview.md" class="nav-card">
     <strong>Cộng đồng</strong>
     <span>Extension, preset, walkthrough và các dự án bạn bè</span>
   </a>

@@ -199,23 +199,23 @@
   - name: Monorepo
     href: guides/monorepo.md
 
-- name: Cộng đồng (EN)
-  href: ../community/overview.md
+- name: Cộng đồng
+  href: community/overview.md
   items:
-  - name: Tổng quan (EN)
-    href: ../community/overview.md
-  - name: Extension (EN)
-    href: ../community/extensions.md
-  - name: Preset (EN)
-    href: ../community/presets.md
-  - name: Bundle (EN)
-    href: ../community/bundles.md
-  - name: Các loại workflow step (EN)
-    href: ../community/workflow-steps.md
-  - name: Hướng dẫn từng bước (EN)
-    href: ../community/walkthroughs.md
-  - name: Dự án bạn bè (EN)
-    href: ../community/friends.md
+  - name: Tổng quan
+    href: community/overview.md
+  - name: Extension
+    href: community/extensions.md
+  - name: Preset
+    href: community/presets.md
+  - name: Bundle
+    href: community/bundles.md
+  - name: Các loại workflow step
+    href: community/workflow-steps.md
+  - name: Hướng dẫn từng bước
+    href: community/walkthroughs.md
+  - name: Dự án bạn bè
+    href: community/friends.md
 
 - name: Bảng thuật ngữ
   href: GLOSSARY.md

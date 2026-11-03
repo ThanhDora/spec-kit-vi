@@ -13,7 +13,7 @@ Bundle kết hợp các thành phần Spec Kit hiện có — extension, preset,
 
 Bundle được mô tả bằng manifest `bundle.yml` và được tìm thấy qua cùng chồng catalog như các thành phần khác. Cài một bundle sẽ phân giải các thành phần được khai báo theo phiên bản đã ghim, kiểm tra xung đột với integration đang hoạt động và xung đột phiên bản thành phần dùng chung, rồi áp dụng từng thành phần một cách idempotent với đầy đủ theo dõi nguồn gốc để sau này có thể gỡ hoặc làm mới sạch sẽ.
 
-Để có điểm khởi đầu cụ thể, xem [các manifest bundle mẫu](https://github.com/github/spec-kit/tree/main/examples/bundles) dành cho product manager, business analyst, nhà nghiên cứu bảo mật và lập trình viên. Chúng minh họa cách đóng gói thiết lập theo vai trò, không phải các đặc tả tính năng đã được sinh đầy đủ; để xem ví dụ sử dụng trọn vẹn, xem [hướng dẫn từng bước của cộng đồng](../../community/walkthroughs.md).
+Để có điểm khởi đầu cụ thể, xem [các manifest bundle mẫu](https://github.com/github/spec-kit/tree/main/examples/bundles) dành cho product manager, business analyst, nhà nghiên cứu bảo mật và lập trình viên. Chúng minh họa cách đóng gói thiết lập theo vai trò, không phải các đặc tả tính năng đã được sinh đầy đủ; để xem ví dụ sử dụng trọn vẹn, xem [hướng dẫn từng bước của cộng đồng](../community/walkthroughs.md).
 
 <a id="first-party-bundles"></a>
 

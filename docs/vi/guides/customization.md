@@ -39,7 +39,7 @@ agent được hỗ trợ và cách thiết lập, hoặc [đóng góp integrati
 Workflow step package mở rộng các loại step mà workflow có thể dùng. Xem
 [custom step package](../reference/workflows.md#custom-step-packages) để biết cách
 cài đặt và thực thi, và
-[workflow step của cộng đồng](../../community/workflow-steps.md) để tìm kiếm và nhận
+[workflow step của cộng đồng](../community/workflow-steps.md) để tìm kiếm và nhận
 hướng dẫn đóng góp. Hãy review các package thực thi được trước khi cài hoặc dùng chúng.
 
 <a id="extensions-add-capabilities"></a>
@@ -58,7 +58,7 @@ specify extension add <extension-name>
 Ví dụ gồm tích hợp Jira, review code sau khi triển khai, truy vết test theo V-Model
 và chẩn đoán sức khỏe dự án. Các extension đi kèm
 [bug](bugfix.md) và [assess](assessment.md) là ví dụ chính thức.
-Duyệt [extension của cộng đồng](../../community/extensions.md), hoặc dùng
+Duyệt [extension của cộng đồng](../community/extensions.md), hoặc dùng
 [tài liệu tham khảo extension](../reference/extensions.md) để biết cách quản lý và cấu hình.
 
 <a id="presets-change-how-a-process-works"></a>
@@ -82,7 +82,7 @@ design.
 cho thấy thuật ngữ có thể được thay đổi sâu rộng đến mức nào.
 
 Nhiều preset có thể xếp chồng lên nhau theo độ ưu tiên. Xem
-[preset của cộng đồng](../../community/presets.md) để có ví dụ và
+[preset của cộng đồng](../community/presets.md) để có ví dụ và
 [tài liệu tham khảo preset](../reference/presets.md) để biết cách cài đặt, các chiến lược
 kết hợp và thứ tự ưu tiên.
 
@@ -136,5 +136,5 @@ cho các thiết lập dành cho product manager, business analyst, nhà nghiên
 
 Các thành phần cộng đồng được duy trì độc lập. Hãy review mã nguồn trước khi
 cài và tự cân nhắc khi sử dụng. Truy cập
-[hướng dẫn cộng đồng](../../community/overview.md) để tìm thành phần hoặc phát hành thành phần
+[hướng dẫn cộng đồng](../community/overview.md) để tìm thành phần hoặc phát hành thành phần
 của riêng bạn, và [tài liệu tham khảo workflow](../reference/workflows.md) để tự động hóa một quy trình.

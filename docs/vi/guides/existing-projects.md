@@ -127,7 +127,7 @@ vòng duy trì cho từng mô hình.
 
 ## Ví dụ với dự án có sẵn
 
-[Các walkthrough của cộng đồng](../../community/walkthroughs.md) có các ví dụ brownfield
+[Các walkthrough của cộng đồng](../community/walkthroughs.md) có các ví dụ brownfield
 với codebase .NET, Java và Go/React. Các extension cộng đồng dùng để
 khám phá kiến trúc và khởi động dự án brownfield được liệt kê trong
-[catalog extension](../../community/extensions.md).
+[catalog extension](../community/extensions.md).

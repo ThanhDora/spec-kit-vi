@@ -839,7 +839,7 @@ my-step/
 └── helpers.py      # optional nested modules and data files
 ```
 
-Để chuẩn bị package công khai cho việc tiếp nhận vào catalog cộng đồng, xem [Các loại workflow step cộng đồng](../../community/workflow-steps.md).
+Để chuẩn bị package công khai cho việc tiếp nhận vào catalog cộng đồng, xem [Các loại workflow step cộng đồng](../community/workflow-steps.md).
 
 `step.yml` khai báo định danh của step. `step.type_key` phải khớp chính xác `<step_id>` được truyền trên dòng lệnh — ID không bao giờ được suy ra từ nội dung package:
 
@@ -904,7 +904,7 @@ specify workflow step add my-step
 
 Cài từ catalog phân giải URL từng file từ các catalog step đang hoạt động, rồi đi qua cùng đường kiểm tra và ghi nhận như `--dev` và `--from`. Không thể cài từ catalog chỉ tìm kiếm.
 
-Để gửi một loại step tùy chỉnh vào catalog cộng đồng chỉ tìm kiếm, hãy làm theo [Các workflow step cộng đồng](../../community/workflow-steps.md). Bài gửi dùng URL từng file ghim theo tag và digest cho từng file; người duy trì kiểm tra metadata và bằng chứng phân phối, không kiểm tra code được gửi.
+Để gửi một loại step tùy chỉnh vào catalog cộng đồng chỉ tìm kiếm, hãy làm theo [Các workflow step cộng đồng](../community/workflow-steps.md). Bài gửi dùng URL từng file ghim theo tag và digest cho từng file; người duy trì kiểm tra metadata và bằng chứng phân phối, không kiểm tra code được gửi.
 
 <a id="catalog-release-history"></a>
 

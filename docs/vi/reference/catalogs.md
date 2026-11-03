@@ -41,7 +41,7 @@ specify bundle info <id> --versions
 
 Đầu ra `info` thông thường và chi tiết hiển thị bởi `--versions` khác nhau tùy loại thành phần. Chế độ xem phiên bản liệt kê các bản phát hành hiện tại và lịch sử trong catalog và, khi được hỗ trợ, gắn nhãn nguồn thắng là cài được hay chỉ dùng để tìm kiếm. Bản phát hành chỉ dùng để tìm kiếm vẫn không cài được theo ID kể cả khi xuất hiện trong danh sách phiên bản. Dùng lệnh `catalog list` của thành phần để xác nhận nguồn đang hoạt động và chính sách cài đặt thay vì dựa vào đầu ra `info` thông thường.
 
-Bạn cũng có thể duyệt các danh sách cộng đồng được duy trì cho [extension](../../community/extensions.md), [preset](../../community/presets.md), [bundle](../../community/bundles.md) và [loại workflow step](../../community/workflow-steps.md).
+Bạn cũng có thể duyệt các danh sách cộng đồng được duy trì cho [extension](../community/extensions.md), [preset](../community/presets.md), [bundle](../community/bundles.md) và [loại workflow step](../community/workflow-steps.md).
 
 <a id="inspect-and-manage-catalog-sources"></a>
 
@@ -113,8 +113,8 @@ Dùng hướng dẫn phát hành riêng của từng thành phần khi viết m�
 | Extension | [Hướng dẫn phát hành extension](../extensions/publishing.md) |
 | Preset | [Hướng dẫn phát hành preset](https://github.com/github/spec-kit/blob/main/presets/PUBLISHING.md) |
 | Workflow | [Hướng dẫn phát hành workflow](https://github.com/github/spec-kit/blob/main/workflows/PUBLISHING.md) |
-| Workflow step | [Loại workflow step của cộng đồng](../../community/workflow-steps.md) |
-| Bundle | [Bundle của cộng đồng](../../community/bundles.md) |
+| Workflow step | [Loại workflow step của cộng đồng](../community/workflow-steps.md) |
+| Bundle | [Bundle của cộng đồng](../community/bundles.md) |
 
 Ví dụ, một catalog extension đã review có thể được đăng ký bằng:
 

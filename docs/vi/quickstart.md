@@ -202,5 +202,5 @@ Thực hiện các tác vụ trong `tasks.md` theo thứ tự phụ thuộc. Tr�
 - Tìm hiểu cách [tùy biến quy trình](guides/customization.md) bằng extension, preset, workflow và bundle
 - Đọc [toàn bộ phương pháp luận](https://github.com/github/spec-kit/blob/main/spec-driven.md) để có hướng dẫn chuyên sâu
 - So sánh [các template lõi](https://github.com/github/spec-kit/tree/main/templates) với
-  [các walkthrough của cộng đồng](../community/walkthroughs.md) để thấy Phát triển hướng đặc tả được dùng thế nào trong dự án thực tế
+  [các walkthrough của cộng đồng](community/walkthroughs.md) để thấy Phát triển hướng đặc tả được dùng thế nào trong dự án thực tế
 - Khám phá [mã nguồn trên GitHub](https://github.com/github/spec-kit)

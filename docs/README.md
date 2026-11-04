@@ -41,6 +41,7 @@ To build the documentation locally:
 - `integrations/catalog.md` - Catalog schema and external adapter metadata
 - `integrations/contributing.md` - Integration and catalog contribution guide
 - `reference/agentic-*.md` - Detailed process command references
+- `vi/` - Vietnamese translation (own `toc.yml`; terminology in `vi/GLOSSARY.md`)
 - `_site/` - Generated documentation output (ignored by git)
 
 ## Deployment

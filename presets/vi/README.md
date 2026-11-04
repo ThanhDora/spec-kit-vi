@@ -39,10 +39,12 @@ specify preset remove vi
 
 ## Kiểm tra bản dịch
 
-Script sau so sánh từng file tiếng Việt với bản tiếng Anh gốc và báo lỗi nếu thiếu hoặc thừa bất kỳ placeholder, tham chiếu lệnh, inline code, khối code hay heading nào, hoặc nếu frontmatter bị thay đổi:
+Script sau so sánh từng file tiếng Việt (template, lệnh của preset và các trang trong `docs/vi/`) với bản tiếng Anh gốc và báo lỗi nếu thiếu hoặc thừa bất kỳ placeholder, tham chiếu lệnh, inline code, khối code hay heading nào, hoặc nếu frontmatter bị thay đổi:
 
 ```bash
-python presets/vi/tools/check_translation.py
+python presets/vi/tools/check_translation.py              # tất cả
+python presets/vi/tools/check_translation.py --only preset # chỉ preset
+python presets/vi/tools/check_translation.py --only docs   # chỉ docs/vi
 ```
 
 Một số inline code là văn bản hiển thị cho người dùng (ví dụ `**Question:**` → `**Câu hỏi:**`) được dịch có chủ đích; danh sách này nằm trong `INLINE_TRANSLATIONS` của script.

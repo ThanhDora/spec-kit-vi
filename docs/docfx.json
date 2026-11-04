@@ -11,7 +11,12 @@
           "guides/*.md",
           "integrations/*.md",
           "reference/*.md",
-          "install/*.md"
+          "install/*.md",
+          "vi/*.md",
+          "vi/toc.yml",
+          "vi/install/*.md",
+          "vi/concepts/*.md",
+          "vi/guides/*.md"
         ]
       },
       {
@@ -78,7 +83,8 @@
     },
     "fileMetadata": {
       "_layout": {
-        "index.md": "landing"
+        "index.md": "landing",
+        "vi/index.md": "landing"
       }
     }
   }

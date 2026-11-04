@@ -87,12 +87,12 @@ manifest của bundle, không chứa nội dung các thành phần mà nó liệ
 kết nối, hãy cài riêng các thành phần tương ứng không nằm trong bundle. Những thành phần
 có `source` khai báo rõ trong catalog vẫn cần mạng để xác minh ngay cả khi đã được cài,
 và nội dung của workflow step hiện chỉ phân giải được qua catalog step. Hãy xem
-[giới hạn offline của bundle](../../reference/bundles.md#install-a-bundle) trước khi
+[giới hạn offline của bundle](../reference/bundles.md#install-a-bundle) trước khi
 dựa vào `specify bundle install --offline`.
 
-Xem [tài liệu tham khảo về catalog](../../reference/catalogs.md) để biết các loại catalog, chính sách
+Xem [tài liệu tham khảo về catalog](../reference/catalogs.md) để biết các loại catalog, chính sách
 tin cậy và thứ tự ưu tiên của nguồn. Nếu endpoint nội bộ yêu cầu thông tin xác thực,
-hãy cấu hình thêm phần [Xác thực](../../reference/authentication.md).
+hãy cấu hình thêm phần [Xác thực](../reference/authentication.md).
 
 <a id="git-credential-manager-on-linux"></a>
 

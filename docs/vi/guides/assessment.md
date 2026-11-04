@@ -32,7 +32,7 @@ specify extension add assess
 
 Sau đó mở agent lập trình trong thư mục đó. Các ví dụ dưới đây dùng
 chế độ skills mặc định của GitHub Copilot (`--integration copilot`). Các agent khác
-dùng [cú pháp gọi lệnh](../../integrations/cli.md#command-invocation)
+dùng [cú pháp gọi lệnh](../integrations/cli.md#command-invocation)
 riêng.
 Gọi từng skill `/speckit-assess-*` riêng biệt trong khung chat của agent, review
 artifact trước khi đi tiếp. Đây là skill của agent, không phải lệnh terminal;
@@ -137,4 +137,4 @@ quyết định cho lệnh đặc tả:
 
 Tiếp tục với [hướng dẫn nhanh SDD](../quickstart.md). Để biết điều kiện tiên quyết của từng bước,
 quy tắc đặt slug và yêu cầu về bằng chứng, xem
-[tài liệu tham khảo lệnh đánh giá ý tưởng](../../reference/agentic-assessment.md).
+[tài liệu tham khảo lệnh đánh giá ý tưởng](../reference/agentic-assessment.md).

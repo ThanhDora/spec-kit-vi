@@ -20,7 +20,7 @@ và dùng quy trình cho thay đổi có giới hạn tiếp theo.
 Trước khi khởi tạo, hãy commit hoặc stash công việc đang dở và tạo một branch cho việc
 áp dụng. Nhờ vậy mọi file được sinh ra đều hiện rõ trong một lần code review bình thường.
 
-Chọn [khóa integration](../../integrations/index.md) cho agent lập trình
+Chọn [khóa integration](../integrations/index.md) cho agent lập trình
 bạn đang dùng. Sau đó chạy lệnh từ thư mục gốc của repository:
 
 ```bash
@@ -105,7 +105,7 @@ Tiếp tục với quy trình thông thường:
 
 Để biết chi tiết các lệnh và các cổng kiểm soát chất lượng tùy chọn, xem
 [Hướng dẫn nhanh](../quickstart.md) và
-[tài liệu tham khảo Agentic SDD](../../reference/agentic-sdd.md).
+[tài liệu tham khảo Agentic SDD](../reference/agentic-sdd.md).
 
 <a id="5-decide-how-specs-will-age"></a>
 
@@ -127,7 +127,7 @@ vòng duy trì cho từng mô hình.
 
 ## Ví dụ với dự án có sẵn
 
-[Các walkthrough của cộng đồng](../../community/walkthroughs.md) có các ví dụ brownfield
+[Các walkthrough của cộng đồng](../community/walkthroughs.md) có các ví dụ brownfield
 với codebase .NET, Java và Go/React. Các extension cộng đồng dùng để
 khám phá kiến trúc và khởi động dự án brownfield được liệt kê trong
-[catalog extension](../../community/extensions.md).
+[catalog extension](../community/extensions.md).

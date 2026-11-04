@@ -177,7 +177,7 @@ specify integration upgrade claude
 specify integration upgrade codex
 ```
 
-Xem [tài liệu tham khảo về integration](../integrations/cli.md#upgrade-an-integration) để biết các tùy chọn như `--script`, `--integration-options` và `--force`.
+Xem [tài liệu tham khảo về integration](integrations/cli.md#upgrade-an-integration) để biết các tùy chọn như `--script`, `--integration-options` và `--force`.
 
 <a id="3-update-installed-extensions"></a>
 
@@ -189,7 +189,7 @@ Chạy:
 specify extension update
 ```
 
-Khi không truyền tên extension, lệnh này cập nhật mọi extension đã cài. Dùng `specify extension update <extension-id-or-name>` để chỉ cập nhật một extension. Xem [tài liệu tham khảo về extension](../reference/extensions.md#update-extensions) để biết chi tiết.
+Khi không truyền tên extension, lệnh này cập nhật mọi extension đã cài. Dùng `specify extension update <extension-id-or-name>` để chỉ cập nhật một extension. Xem [tài liệu tham khảo về extension](reference/extensions.md#update-extensions) để biết chi tiết.
 
 <a id="fallback-re-run-init"></a>
 

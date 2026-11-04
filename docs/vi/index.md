@@ -70,7 +70,7 @@ Xác định thứ cần xây dựng trước khi bắt tay xây dựng. Templat
 
 Chạy `specify init` với agent bạn chọn, Spec Kit sẽ tự động thiết lập đúng file lệnh và cấu trúc thư mục. Nếu agent của bạn không có trong danh sách, integration `generic` là lối thoát dùng được cho mọi công cụ.
 
-<a href="../integrations/index.md" class="pillar-link">Xem mọi integration →</a>
+<a href="integrations/index.md" class="pillar-link">Xem mọi integration →</a>
 
 </div>
 
@@ -91,10 +91,10 @@ Kể cả những quy trình hoàn toàn khác:
 - **MAQA** — điều phối nhiều agent với các cổng kiểm soát đảm bảo chất lượng
 - **Fiction Book Writing** — viết tiểu thuyết và văn xuôi dài, từ story bible đến bản thảo nộp đi
 
-<a href="../reference/presets.md" class="pillar-link">Preset →</a>&nbsp;&nbsp;
-<a href="../reference/extensions.md" class="pillar-link">Extension →</a>&nbsp;&nbsp;
-<a href="../reference/workflows.md" class="pillar-link">Workflow →</a>&nbsp;&nbsp;
-<a href="../reference/bundles.md" class="pillar-link">Bundle →</a>
+<a href="reference/presets.md" class="pillar-link">Preset →</a>&nbsp;&nbsp;
+<a href="reference/extensions.md" class="pillar-link">Extension →</a>&nbsp;&nbsp;
+<a href="reference/workflows.md" class="pillar-link">Workflow →</a>&nbsp;&nbsp;
+<a href="reference/bundles.md" class="pillar-link">Bundle →</a>
 
 </div>
 
@@ -109,7 +109,7 @@ Hoạt động offline, sau tường lửa và trên **Windows, macOS và Linux*
 Các extension cộng đồng như CI Guard và Architecture Guard bổ sung cổng kiểm soát tuân thủ và quản trị phù hợp với cách nhóm của bạn đang làm việc.
 
 <a href="install/air-gapped.md" class="pillar-link">Doanh nghiệp / Air-gapped →</a>&nbsp;&nbsp;
-<a href="../reference/overview.md" class="pillar-link">Tài liệu tham khảo →</a>
+<a href="reference/overview.md" class="pillar-link">Tài liệu tham khảo →</a>
 
 </div>
 
@@ -152,7 +152,7 @@ Các extension cộng đồng như CI Guard và Architecture Guard bổ sung c�
   </div>
 </div>
 
-<a href="../community/presets.md">Preset</a> · <a href="../community/walkthroughs.md">Walkthrough</a> · <a href="../community/friends.md">Dự án bạn bè</a>
+<a href="community/presets.md">Preset</a> · <a href="community/walkthroughs.md">Walkthrough</a> · <a href="community/friends.md">Dự án bạn bè</a>
 
 </div>
 
@@ -191,11 +191,11 @@ Các extension cộng đồng như CI Guard và Architecture Guard bổ sung c�
     <strong>Nâng cấp</strong>
     <span>Giữ dự án Spec Kit hiện có luôn cập nhật qua các bản phát hành</span>
   </a>
-  <a href="../reference/overview.md" class="nav-card">
+  <a href="reference/overview.md" class="nav-card">
     <strong>Tài liệu tham khảo</strong>
     <span>Lệnh lõi, catalog, integration, extension, preset và workflow</span>
   </a>
-  <a href="../community/overview.md" class="nav-card">
+  <a href="community/overview.md" class="nav-card">
     <strong>Cộng đồng</strong>
     <span>Extension, preset, walkthrough và các dự án bạn bè</span>
   </a>

@@ -101,7 +101,7 @@ bắt buộc phải nằm bên trong — thư mục gốc của dự án xác đ
 và ngữ cảnh lệnh/cấu hình của nó, chứ không phải ranh giới chứa các tài liệu
 tính năng. Hai biến này kết hợp được với nhau: đặt cả hai để chọn dự án và tính năng
 mà không cần tương tác. Xem
-[tài liệu tham khảo `SPECIFY_INIT_DIR`](../../reference/core.md#environment-variables) để biết
+[tài liệu tham khảo `SPECIFY_INIT_DIR`](../reference/core.md#environment-variables) để biết
 toàn bộ contract và mô hình hai trục.
 
 Các lệnh con theo phạm vi dự án của CLI `specify` cũng tôn trọng biến này, nên chúng cũng

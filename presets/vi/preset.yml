@@ -1,0 +1,106 @@
+schema_version: "1.0"
+
+preset:
+  id: "vi"
+  name: "Tiếng Việt (Vietnamese)"
+  version: "1.0.0"
+  description: "Vietnamese translation of all core templates and SDD commands - artifacts and agent replies in Vietnamese"
+  author: "ThanhDora"
+  repository: "https://github.com/ThanhDora/spec-kit-vi"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=1.2.0"
+
+provides:
+  templates:
+    - type: "template"
+      name: "spec-template"
+      file: "templates/spec-template.md"
+      description: "Template đặc tả tính năng tiếng Việt"
+      replaces: "spec-template"
+
+    - type: "template"
+      name: "plan-template"
+      file: "templates/plan-template.md"
+      description: "Template kế hoạch triển khai tiếng Việt"
+      replaces: "plan-template"
+
+    - type: "template"
+      name: "tasks-template"
+      file: "templates/tasks-template.md"
+      description: "Template danh sách tác vụ tiếng Việt"
+      replaces: "tasks-template"
+
+    - type: "template"
+      name: "checklist-template"
+      file: "templates/checklist-template.md"
+      description: "Template checklist tiếng Việt"
+      replaces: "checklist-template"
+
+    - type: "template"
+      name: "constitution-template"
+      file: "templates/constitution-template.md"
+      description: "Template hiến chương dự án tiếng Việt"
+      replaces: "constitution-template"
+
+    - type: "command"
+      name: "speckit.specify"
+      file: "commands/speckit.specify.md"
+      description: "Lệnh specify bằng tiếng Việt - tạo đặc tả tính năng"
+      replaces: "speckit.specify"
+
+    - type: "command"
+      name: "speckit.clarify"
+      file: "commands/speckit.clarify.md"
+      description: "Lệnh clarify bằng tiếng Việt - làm rõ đặc tả"
+      replaces: "speckit.clarify"
+
+    - type: "command"
+      name: "speckit.plan"
+      file: "commands/speckit.plan.md"
+      description: "Lệnh plan bằng tiếng Việt - lập kế hoạch triển khai"
+      replaces: "speckit.plan"
+
+    - type: "command"
+      name: "speckit.tasks"
+      file: "commands/speckit.tasks.md"
+      description: "Lệnh tasks bằng tiếng Việt - sinh danh sách tác vụ"
+      replaces: "speckit.tasks"
+
+    - type: "command"
+      name: "speckit.analyze"
+      file: "commands/speckit.analyze.md"
+      description: "Lệnh analyze bằng tiếng Việt - phân tích tính nhất quán"
+      replaces: "speckit.analyze"
+
+    - type: "command"
+      name: "speckit.checklist"
+      file: "commands/speckit.checklist.md"
+      description: "Lệnh checklist bằng tiếng Việt - sinh checklist chất lượng yêu cầu"
+      replaces: "speckit.checklist"
+
+    - type: "command"
+      name: "speckit.implement"
+      file: "commands/speckit.implement.md"
+      description: "Lệnh implement bằng tiếng Việt - thực thi tác vụ"
+      replaces: "speckit.implement"
+
+    - type: "command"
+      name: "speckit.converge"
+      file: "commands/speckit.converge.md"
+      description: "Lệnh converge bằng tiếng Việt - đối chiếu code với đặc tả"
+      replaces: "speckit.converge"
+
+    - type: "command"
+      name: "speckit.constitution"
+      file: "commands/speckit.constitution.md"
+      description: "Lệnh constitution bằng tiếng Việt - tạo/cập nhật hiến chương"
+      replaces: "speckit.constitution"
+
+tags:
+  - "vietnamese"
+  - "vi"
+  - "i18n"
+  - "localization"
+  - "translation"
